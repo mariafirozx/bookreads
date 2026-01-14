@@ -1,7 +1,45 @@
+import React from "react";
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
+
+
 
 function App() {
   return (
     <>
+    <div className="main-container">
+
+      <div className="content">
+        
+      </div>
+      
+
+
+
+
+
+
+
+
+
+
+      <footer className="contain">
+
+                    <div className='icons'>
+                            <a href='https://www.linkedin.com/in/marya-fairoz/' target='_blank'><i className="bi bi-linkedin"></i></a>
+                            <a href="https://github.com/mariafirozx" target='_blank'><i className="bi bi-github"></i></a>
+                    </div>
+                        <p className="text">
+                            designed & created by zahra.
+
+                        </p>
+
+                    
+                </footer>
+
+    </div>
+
+
     </>
   );
 }

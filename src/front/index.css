@@ -1,6 +1,9 @@
 
 :root{
   --bg-color: #EDE8D0;
+  --secondary-primary: #FE7F2D; 
+  --third-primary: #215E61;
+  --card--primary: #FDB5CE;
   
 }
 
@@ -12,10 +15,74 @@
 }
 
 body, #root{
-   min-height: 100vh;
     width: 100vw;
     min-height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
     background-color: var(--bg-color);
+}
+
+.main-container{
+  /* background-color: aqua; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    margin-right: 3em;
+
+}
+
+/* .content{
+  flex: 1;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**footer**/
+.contain{
+  width: 100%;
+  height: auto; /*doesnt push the footer to top*/
+  z-index: 1;
+  text-align: center;
+  margin-top: auto;
+  position: relative;
+}
+
+
+.text a{
+   color: black;
+   font-size: 12px;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 5px;
+    
+}
+
+.icons a i {
+    font-size: 1.1rem;
 }
