@@ -1,7 +1,10 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Delius&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Onest:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Sekuya&display=swap');
+
 :root{
   --bg-color: #EDE8D0;
-  --secondary-primary: #FE7F2D; 
+  --primary-color: #FFCF00;
+  --secondary-primary: #EE6123; 
   --third-primary: #215E61;
   --card--primary: #FDB5CE;
   
@@ -33,20 +36,108 @@ body, #root{
     margin-right: 3em;
 
 }
+.navbar{
+  background-color: var(--secondary-primary);
+  /* height: 100px;
+  width: 45%; */
+  /* margin: 40px auto; */
+  /* padding: 0 1em;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  top: 1em;
+  display: flex; */
 
-/* .content{
-  flex: 1;
-} */
+  height: 62px;
+  width: 110%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  margin-top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.container-fluid{
+  /* background-color: aqua; */
+}
+
+.nav-list{
+  position: absolute;
+  margin: 0 auto;
+  padding: 0;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  left: 20em;
+  list-style: none;
+
+}
+
+.navbar-nav{ 
+  list-style: none;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+
+  gap: 1.5rem;
+
+}
+.nav-item a{
+  text-decoration: none;
+  color: var(--third-primary);
+  font-family: "Delius", cursive;
+  font-weight: 600;
+  cursor: pointer;
 
 
+}
 
+.nav-item a:hover{
+  color: var(--primary-color);
+}
 
+.navbar-brand{
+  color: var(--primary-color) !important;
+  font-size: 25px;
+  font-family: "Sekuya", system-ui;
+  font-weight: 200;
+}
 
+.brand{
+  /* display: flex;
+  justify-content: center;
+  position: absolute; */
+  display: flex;
+  align-items: center;
+  position: static;
+  gap: 0.1rem;
 
+}
 
+.bookmarkImg{
+  /* position: absolute;
+  justify-content: center;
+  margin:  auto;
+  padding: 0;
+  display: flex;
+  right: 12rem;
+  top: 1px; */
 
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 1rem;
 
+}
 
+.bookmark{
+  width: 100px;
+}
 
 
 
@@ -69,9 +160,11 @@ body, #root{
 }
 
 
-.text a{
-   color: black;
-   font-size: 12px;
+.text {
+   color: var(--third-primary);
+   font-size: 13px;
+   font-weight: bold;
+
 }
 
 .icons{
@@ -85,4 +178,6 @@ body, #root{
 
 .icons a i {
     font-size: 1.1rem;
+    color: var(--third-primary);
+
 }

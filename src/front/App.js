@@ -1,5 +1,6 @@
 import React from "react";
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import Navbar from "./Navbar";
 
 
 
@@ -8,6 +9,10 @@ function App() {
   return (
     <>
     <div className="main-container">
+
+      <Navbar title="Bookreads"></Navbar>
+
+      
 
       <div className="content">
         
