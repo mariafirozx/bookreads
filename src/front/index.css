@@ -48,31 +48,42 @@ body, #root{
   top: 1em;
   display: flex; */
 
-  height: 62px;
+  height: 95px;
   width: 110%;
+  /* max-width: 1200px; */
   margin: 0 auto;
   padding: 0 1rem;
+  padding-bottom: 1em;
   margin-top: 0;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
+  box-shadow: 0px 1px 10px #999;
+
+
 }
 
 .container-fluid{
-  /* background-color: aqua; */
+  margin-top: 1em;
 }
 
 .nav-list{
   position: absolute;
-  margin: 0 auto;
-  padding: 0;
+  margin: 0 auto ;
+  padding: 0.6rem 3rem;
+  /* width: 23em; */
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   display: flex;
-  left: 20em;
   list-style: none;
+  background-color: var(--primary-color);
+  border-radius: 25px;
+  margin-left: 42em;
+  gap: 1rem;
+  opacity: 90%;
+
 
 }
 
@@ -82,7 +93,7 @@ body, #root{
   justify-content: flex-start;
   display: flex;
 
-  gap: 1.5rem;
+  gap: 1.8rem;
 
 }
 .nav-item a{
@@ -96,12 +107,12 @@ body, #root{
 }
 
 .nav-item a:hover{
-  color: var(--primary-color);
+  color: var(--secondary-primary);
 }
 
 .navbar-brand{
   color: var(--primary-color) !important;
-  font-size: 25px;
+  font-size: 35px;
   font-family: "Sekuya", system-ui;
   font-weight: 200;
 }
@@ -131,15 +142,66 @@ body, #root{
   position: absolute;
   margin: 0;
   padding: 0;
-  left: 1rem;
+  left: 1.5rem;
 
 }
 
 .bookmark{
-  width: 100px;
+  width: 110px;
 }
 
+.search{
+  position: absolute;
+  /* background-color: #215E61; */
+  width: 310px;
+  height: 2.7rem;
+  max-width: 30%;
+  margin: 0 0 0 1rem;
+  padding: 0;
+  left: 22rem;
+  border-radius: 30px;
+}
 
+.search-field{
+  border-radius: 20px;
+  /* height: 2.1em; */
+    padding: 0.4rem 3rem;
+
+
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 2.4rem;
+  padding-left: 2.5rem;
+}
+
+.search-field::placeholder{
+  font-family: "Delius", cursive;
+  opacity: 65%;
+}
+
+.search-field:focus{
+  border-color: var(--primary-color);
+  box-shadow: 4px 4px var(--primary-color);
+}
+
+.search-Icon{
+  position: absolute;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  top: 12px;
+  color: var(--third-primary);
+  opacity: 75%;
+}
+
+/* .search-Icon i{
+  position: static;
+  color: var(--secondary-primary);
+  font-size: 1rem;
+
+} */
 
 
 
