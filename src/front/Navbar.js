@@ -27,12 +27,6 @@ export default function Navbar(props){
                     </div>
 
 
-                     <form class="search d-flex">
-                        <i class="search-Icon bi bi-search"></i>
-                        <input class="search-field form-control me-2" type="search" placeholder="Search for books" aria-label="Search">
-                        </input>
-                        {/* <button class="btn btn-outline-success" type="submit">Search</button> */}
-                    </form>
 
                         <div className="nav-list">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0"> 
@@ -52,6 +46,20 @@ export default function Navbar(props){
                                 </li>
                             </ul>
                         </div>
+                     <form className="search d-flex">
+                        <i className="search-Icon bi bi-search"></i>
+                        <input className="search-field form-control me-2" type="search" placeholder="Search for books" aria-label="Search">
+                        </input>
+                        {/* <button class="btn btn-outline-success" type="submit">Search</button> */}
+                    </form>
+
+
+                    <div className="user-container">
+
+                        <img className="userPro rounded-circle"></img>
+
+                    </div>
+
 
                 </div>
 
