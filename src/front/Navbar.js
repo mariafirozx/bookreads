@@ -2,11 +2,15 @@ import react from "react";
 import {useState, useEffect} from "react";
 import { Link, Outlet } from "react-router-dom";
 import bookmark from '../assets/imgs/bookmark.png';
-
+import dummyavatar from '../assets/imgs/dummy-avatar.jpg';
+import dummyavatar2 from '../assets/imgs/dummy-avatar2.png';
 
 
 
 export default function Navbar(props){
+    const [OpenDropdown, setOpenDropdown] = useState(false);
+
+
     return(
         <>
         <div className="navContainer">
@@ -26,8 +30,6 @@ export default function Navbar(props){
                         </Link>
                     </div>
 
-
-
                         <div className="nav-list">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0"> 
                                 <li className="nav-item">
@@ -37,10 +39,19 @@ export default function Navbar(props){
                                 <li className="nav-item">
                                     <a className="myBooks">My Books</a>
                                 </li>
+                                <li className="nav-item dropdown" onClick={() => setOpenDropdown(drop => !drop)}>
+                                    <a className="nav-link dropdown-toggle Browse" href="#">Browse</a>
+                                    <ul className={`list dropdown-menu ${OpenDropdown? 'show' : ''}`}>
+                                        <h4 className="favGenreTitle">Favorite Genres</h4>
+                                        <li><a className="dropdown-item" href="#">Fantasy</a></li>
+                                        <li><a className="dropdown-item" href="#">Fiction</a></li>
+                                        <li><a className="dropdown-item" href="#">Gay and Lesbian</a></li>
+                                        <li><a className="dropdown-item" href="#">Horror</a></li>
+                                        <li><a className="dropdown-item" href="#">Horror</a></li>
+                                    </ul>
 
-                                <li className="nav-item">
-                                    <a className="Browse">Browse</a>
                                 </li>
+
                                 <li className="nav-item">
                                     <a className="Community">Community</a>
                                 </li>
@@ -56,7 +67,10 @@ export default function Navbar(props){
 
                     <div className="user-container">
 
-                        <img className="userPro rounded-circle"></img>
+                        <div className="user-notif">
+                            <i class="notifIcon bi bi-bell-fill"></i>
+                        </div>
+                        <img className="userPro rounded-circle" src={dummyavatar2} ></img>
 
                     </div>
 
