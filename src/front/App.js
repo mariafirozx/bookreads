@@ -7,7 +7,7 @@ import Navbar from "./Navbar";
 
 function App() {
   return (
-    <>
+    <>      
     <div className="main-container">
 
       <Navbar title="Bookreads"></Navbar>
@@ -18,15 +18,6 @@ function App() {
         
       </div>
       
-
-
-
-
-
-
-
-
-
 
       <footer className="contain">
 

@@ -6,16 +6,16 @@ export default function Home(){
     return(
         <>
 
-        {/* <div className="main">
-            <Navbar title="Bookreads"></Navbar>
+        <div className="left-container">
             
-        </div> */}
-        
-        <div className="display-card">
-            <div>
-
+            <div className="current-read">
 
             </div>
+
+            <div className="want-to-read">
+
+            </div>
+            
         </div>
         
         </>

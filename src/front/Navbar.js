@@ -33,21 +33,23 @@ export default function Navbar(props){
                         <div className="nav-list">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0"> 
                                 <li className="nav-item">
-                                    <a className="Home">Home</a>
+                                    <a className="Home active">Home</a>
 
                                 </li>
                                 <li className="nav-item">
                                     <a className="myBooks">My Books</a>
                                 </li>
                                 <li className="nav-item dropdown" onClick={() => setOpenDropdown(drop => !drop)}>
-                                    <a className="nav-link dropdown-toggle Browse" href="#">Browse</a>
+                                    <a className="dropdown-toggle Browse" href="#">Browse</a>
                                     <ul className={`list dropdown-menu ${OpenDropdown? 'show' : ''}`}>
                                         <h4 className="favGenreTitle">Favorite Genres</h4>
                                         <li><a className="dropdown-item" href="#">Fantasy</a></li>
                                         <li><a className="dropdown-item" href="#">Fiction</a></li>
                                         <li><a className="dropdown-item" href="#">Gay and Lesbian</a></li>
                                         <li><a className="dropdown-item" href="#">Horror</a></li>
-                                        <li><a className="dropdown-item" href="#">Horror</a></li>
+                                        <li><a className="dropdown-item" href="#">Romance</a></li>
+                                        <li><a className="dropdown-item" href="#">Thriller</a></li>
+
                                     </ul>
 
                                 </li>
