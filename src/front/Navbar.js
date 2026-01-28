@@ -51,7 +51,6 @@ export default function Navbar(props){
                                         <li><a className="dropdown-item" href="#">Thriller</a></li>
 
                                     </ul>
-
                                 </li>
 
                                 <li className="nav-item">
@@ -72,7 +71,25 @@ export default function Navbar(props){
                         <div className="user-notif">
                             <i class="notifIcon bi bi-bell-fill"></i>
                         </div>
-                        <img className="userPro rounded-circle" src={dummyavatar2} ></img>
+
+                        <div className="user dropdown">
+                            <div className="userPro-wrapper">
+
+                                <img className="userPro rounded-circle dropdown-toggle" src={dummyavatar2}></img>
+                            </div>
+                                <ul className="user-list dropdown-menu ">
+
+                                    <h4 className="user-name">Hey, zahra</h4>
+                                    <li><a className="dropdown-item"href="#profile">Profile</a></li>
+                                    <li><a className="dropdown-item"href="#friends">Friends</a></li>
+                                    <li><a className="dropdown-item"href="#comments">Comments</a></li>
+                                    <li><hr className="dropdown-divider"></hr></li>
+                                    <li><a className="dropdown-item"href="#AccountSettings">Account Settings</a></li>
+                                    <li><a className="dropdown-item"href="#signout">Sign Out</a></li>
+
+                                </ul>
+
+                        </div>
 
                     </div>
 

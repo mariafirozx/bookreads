@@ -8,6 +8,7 @@ export default function Home(){
 
         <div className="left-container">
             
+
             <div className="current-read">
 
             </div>
