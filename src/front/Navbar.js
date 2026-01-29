@@ -8,8 +8,12 @@ import dummyavatar2 from '../assets/imgs/dummy-avatar2.png';
 
 
 export default function Navbar(props){
-    const [OpenDropdown, setOpenDropdown] = useState(false);
+    const [OpenDropdown, setOpenDropdown] = useState(null);
 
+    const toggleDropdown = (name) =>{
+        setOpenDropdown(drop => (drop === name ? null : name))
+    }
+    
 
     return(
         <>
@@ -23,11 +27,7 @@ export default function Navbar(props){
                             <img className="bookmark" src={bookmark}></img>
 
                         </div>
-                        <Link to='home/' className="navbar-brand fw-bold text-dark">{props.title}
-
-                        
-                        
-                        </Link>
+                        <Link to='home/' className="navbar-brand fw-bold text-dark">{props.title}</Link>
                     </div>
 
                         <div className="nav-list">
@@ -39,20 +39,25 @@ export default function Navbar(props){
                                 <li className="nav-item">
                                     <a className="myBooks">My Books</a>
                                 </li>
-                                <li className="nav-item dropdown" onClick={() => setOpenDropdown(drop => !drop)}>
-                                    <a className="dropdown-toggle Browse" href="#">Browse</a>
-                                    <ul className={`list dropdown-menu ${OpenDropdown? 'show' : ''}`}>
-                                        <h4 className="favGenreTitle">Favorite Genres</h4>
-                                        <li><a className="dropdown-item" href="#">Fantasy</a></li>
-                                        <li><a className="dropdown-item" href="#">Fiction</a></li>
-                                        <li><a className="dropdown-item" href="#">Gay and Lesbian</a></li>
-                                        <li><a className="dropdown-item" href="#">Horror</a></li>
-                                        <li><a className="dropdown-item" href="#">Romance</a></li>
-                                        <li><a className="dropdown-item" href="#">Thriller</a></li>
+                                <li className="nav-item dropdown" onClick={ () => toggleDropdown('browse')}>
+                                    <a className=" dropdown-toggle Browse" href="#">Browse</a>
 
-                                    </ul>
+                                    {OpenDropdown === 'browse' && (
+
+                                        <ul className="list dropdown-menu show ">
+                                            <h4 className="favGenreTitle">Favorite Genres</h4>
+                                            <li><a className="dropdown-item" href="#">Fantasy</a></li>
+                                            <li><a className="dropdown-item" href="#">Fiction</a></li>
+                                            <li><a className="dropdown-item" href="#">Gay and Lesbian</a></li>
+                                            <li><a className="dropdown-item" href="#">Horror</a></li>
+                                            <li><a className="dropdown-item" href="#">Romance</a></li>
+                                            <li><a className="dropdown-item" href="#">Thriller</a></li>
+
+                                        </ul>
+
+                                    )}
                                 </li>
-
+                                
                                 <li className="nav-item">
                                     <a className="Community">Community</a>
                                 </li>
@@ -74,10 +79,11 @@ export default function Navbar(props){
 
                         <div className="user dropdown">
                             <div className="userPro-wrapper">
-
-                                <img className="userPro rounded-circle dropdown-toggle" src={dummyavatar2}></img>
+                                <img className="userPro rounded-circle" src={dummyavatar2} onClick={ () => toggleDropdown('profile')}></img>
                             </div>
-                                <ul className="user-list dropdown-menu ">
+
+                            {OpenDropdown === 'profile' && (
+                                <ul className= "user-list dropdown-menu show">
 
                                     <h4 className="user-name">Hey, zahra</h4>
                                     <li><a className="dropdown-item"href="#profile">Profile</a></li>
@@ -88,6 +94,8 @@ export default function Navbar(props){
                                     <li><a className="dropdown-item"href="#signout">Sign Out</a></li>
 
                                 </ul>
+
+                            )}
 
                         </div>
 

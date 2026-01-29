@@ -219,17 +219,21 @@ body, #root{
   display: flex;
   margin: 0 auto;
   padding: 0;
-  margin-left: 75em;
+  margin-left: 72em;
   position: absolute;
   justify-content: center;
   align-items: center;
+  /* z-index: 1; */
   /* background-color: #EDE8D0; */
-
 }
+
 .userPro{
+  width: 47px;
+  height: 47px;
+  /* bottom: .1px;
   display: inline-block;
-  position: relative;
-  margin-left: 8em;
+  position: absolute;
+  margin-left: 2em;
   width: 47px;
   height: 47px;
   border-radius: 50%;
@@ -237,20 +241,29 @@ body, #root{
   padding: 0;
   cursor: pointer;
   z-index: 2;
-    transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
-
-  /* border-radius: 5px; */
+  transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease; */
 }
 
 .userPro-wrapper{
-  
+  left: 5em;
+  display: inline-block;
+  /* object-fit: cover; */
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+  /* width: 20px; */
+  /* background-color:#FDB5CE; */
+  padding: 0.70rem 0.70rem;
+  margin: 0 auto;
 }
+
 .userPro-wrapper::before{
   content: "";
   position: absolute;
-  inset: -8px;
+  /* inset: -8px; */
   border-radius: 5px;
-  padding: 0.70rem 0.70rem;
   background: transparent;
   box-shadow: none;
   transition: background-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
@@ -259,8 +272,8 @@ body, #root{
 
 .userPro-wrapper:hover{
   background-color: var(--third-primary);
-    box-shadow: 0 10px 24px rgba(33, 94, 97, 0.16);
-transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(33, 94, 97, 0.16);
+  transform: translateY(-1px);
   
 }
 
@@ -323,6 +336,10 @@ transform: translateY(-1px);
   display: block;
 }
 
+/* 
+.user-list .show2{
+  display: block;
+} */
 .dropdown-menu .show{
    /* box-shadow: 0 10px 24px rgba(33, 94, 97, 0.16);
   background-color: var(--third-primary); */
@@ -334,8 +351,8 @@ transform: translateY(-1px);
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  /* left: 2em; */
 
-  
 }
 
 .user-name{
@@ -345,10 +362,12 @@ transform: translateY(-1px);
 }
 
 .user-list{
-  display: block;
-  margin: 0 auto;
+  position: absolute;
+  /* display: block; */
+  /* margin: 0 auto; */
   padding: 1.2rem 2rem 1.4rem 0.6rem;
-  margin-top: 1em;
+  margin-top: 1.4em;
+  right: -5em;
 }
 
 .user-list .dropdown-item{
@@ -356,7 +375,6 @@ transform: translateY(-1px);
   font-weight: 550;
   padding: 0.5rem 0.80rem;
   
-  /* transition: transform 140ms ease, box-shadow 140ms ease, background-color 140ms ease; */
 }
 
  .user-list .dropdown-item:hover{
