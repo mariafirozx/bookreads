@@ -40,7 +40,7 @@ export default function Navbar(props){
                                     <a className="myBooks">My Books</a>
                                 </li>
                                 <li className="nav-item dropdown" onClick={ () => toggleDropdown('browse')}>
-                                    <a className=" dropdown-toggle Browse" href="#">Browse</a>
+                                    <a className={` dropdown-toggle Browse ${OpenDropdown === "browse"? "activeDrop" : ''}`} href="#">Browse</a>
 
                                     {OpenDropdown === 'browse' && (
 
@@ -78,8 +78,8 @@ export default function Navbar(props){
                         </div>
 
                         <div className="user dropdown">
-                            <div className="userPro-wrapper">
-                                <img className="userPro rounded-circle" src={dummyavatar2} onClick={ () => toggleDropdown('profile')}></img>
+                            <div className={`userPro-wrapper ${OpenDropdown === "profile" ? "active": ""}`}>
+                                <img className= "userPro rounded-circle" src={dummyavatar2} onClick={ () => toggleDropdown('profile')}></img>
                             </div>
 
                             {OpenDropdown === 'profile' && (

@@ -6,12 +6,12 @@ export default function Home(){
     return(
         <>
 
-        <div className="left-container">
+        <div className="right-container">
             
 
-            <div className="current-read">
+            <section className="current-read">
 
-            </div>
+            </section>
 
             <div className="want-to-read">
 

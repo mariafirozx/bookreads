@@ -277,6 +277,11 @@ body, #root{
   
 }
 
+.userPro-wrapper.active{
+  background-color: var(--third-primary);
+  box-shadow: 0 10px 24px rgba(33, 94, 97, 0.16);
+  transform: translateY(-1px);
+}
 .user-notif{
   position: absolute;
   display: flex;
@@ -326,6 +331,12 @@ body, #root{
   background-color: var(--secondary-primary);
   color: var(--primary-color);
   border-radius: 30px;
+
+}
+
+.nav-item >a.activeDrop{
+    box-shadow: 0 10px 24px rgba(33, 94, 97, 0.16);
+  background-color: var(--third-primary);
 
 }
 .dropdown-item{
