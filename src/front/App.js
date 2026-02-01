@@ -1,6 +1,8 @@
 import React from "react";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Navbar from "./Navbar";
+import { Outlet } from 'react-router';
+
 
 function App() {
   return (
@@ -9,9 +11,9 @@ function App() {
 
       <Navbar title="Bookreads"></Navbar>
 
-      
 
       <div className="content">
+        <Outlet></Outlet>
         
       </div>
       
