@@ -9,8 +9,8 @@ export default function Home(){
         <>
 
         <div className="right-container">
-            
             <section className="current-read">
+                <h5 className="currentHead">Currently Reading</h5>
                 {/* <CurrentRead></CurrentRead> */}
 
             </section>

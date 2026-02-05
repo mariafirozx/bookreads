@@ -28,9 +28,7 @@ function App() {
                             designed & created by zahra.
 
                         </p>
-
-                    
-                </footer>
+      </footer>
 
     </div>
 
