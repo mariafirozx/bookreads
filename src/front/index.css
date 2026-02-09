@@ -25,29 +25,32 @@ body, #root{
     width: 100%;
     min-height: 100vh;
     overflow-y: auto;
-    overflow-x: hidden;
+    overflow-x: auto;
     background-color: var(--bg-color);
 }
 
 .main-container{
   /* background-color: aqua; */
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     position: relative;
+    top: 0;
+    z-index: 1;
+    /* position: relative;
     z-index: 1;
     margin-right: 0;
-    top: 0;
+    top: 0; */
 
 }
 
 .content{
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  min-height: 100vh;
+  /* display: flex;
+  flex-direction: column; */
+  /* flex-grow: 1;
+  min-height: 100vh; */
 }
 
 .navbar{
@@ -63,7 +66,7 @@ body, #root{
   display: flex; */
 
   height: 65px;
-  width: 110%;
+  width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
   padding-bottom: 1em;
@@ -232,8 +235,8 @@ body, #root{
   display: flex;
   margin: 0 auto;
   padding: 0;
-  margin-left: 72em;
-  position: absolute;
+  margin-left: 55em;
+  position: relative;
   justify-content: center;
   align-items: center;
   /* z-index: 1; */
@@ -243,6 +246,7 @@ body, #root{
 .userPro{
   width: 47px;
   height: 47px;
+
   /* bottom: .1px;
   display: inline-block;
   position: absolute;
@@ -259,6 +263,7 @@ body, #root{
 
 .userPro-wrapper{
   left: 5em;
+  /* margin-top: 2em; */
   display: inline-block;
   /* object-fit: cover; */
   justify-content: center;
@@ -266,7 +271,7 @@ body, #root{
   cursor: pointer;
   z-index: 2;
   position: relative;
-  padding: 0.70rem 0.70rem;
+  padding: 0.60rem 0.60rem;
   margin: 0 auto;
 }
 
@@ -373,6 +378,7 @@ body, #root{
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  
   /* left: 2em; */
 
 }
@@ -388,7 +394,7 @@ body, #root{
   /* display: block; */
   /* margin: 0 auto; */
   padding: 1.2rem 2rem 1.4rem 0.6rem;
-  margin-top: 1.4em;
+  margin-top: 1em;
   right: -5em;
 }
 
@@ -424,46 +430,91 @@ body, #root{
   display: block;
   /* justify-content: center; */
   align-items: center;
-  margin: 2rem auto ;
-  padding: 20rem 19rem 20rem 14rem;
+  margin: 0 auto ;
+  padding: 19rem 10rem 14rem 14rem;
   /* padding-top: 21em; */
-  bottom: 1.9em;
-  width: 390px;
-  height: 100%;
-  box-sizing: border-box;
-  max-width: calc(100% - 4rem);
+  top: 2em;
+  padding-right: 3em;
+  /* padding-left: 12rem; */
+  width: 530px;
+  height: 130%;
+  /* box-sizing: border-box; */
+  /* max-width: calc(140% - 2rem); */
   /* max-height: 100vh; */
-  margin-right: 0.50rem;
+  margin-left: 62rem;
   justify-content: flex-start;
-  background-color: #215E61;
+  /* background-color: #215E61; */
   /* overflow: auto; */
 
 }
 
 .current-read{
   position: relative;
-  display: block;
-  margin: 1rem 0;
-  padding: 16rem 15rem 10rem 10rem;
-  bottom: 20em;
+  display: flex;
+  /* margin: 1rem 0; */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* padding: 16rem 25rem 10rem 10rem; */
+  /* bottom: 20em;
+  right: 14em; */
   right: 14em;
-  background-color: #FDB5CE;
+  bottom: 18em;
+  width: 530px;
+  min-height: 500px;
+  padding: 1.5rem;
+  /* background-color: #FDB5CE; */
 }
 
 .currentHead{
   font-family: "Inter", sans-serif;
   align-items: center;
-  justify-content: left;
+  /* justify-content: left; */
   display: flex;
-  position: absolute;
-  margin: 1rem 0;
-  font-size: 23px;
-  bottom: 5em;
+  margin-left: 14em;
+  /* margin: 0 auto; */
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.book-container{
+  display: block;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #EE6123;
+  width: 220px;
+  margin: 2rem auto;
+  position: relative;
+  margin-right: 4em;
+
+
+}
+.book-details{
+
+  justify-content: right;
+  align-items: flex-start;
+  margin: 1rem 0.5rem;
+
+
+}
+.bookPos{
+  margin: 0.5rem  0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6em;
+}
+
+.bookImg{
+  max-width: 100px;
 
 }
 
-
-
+.bookName{
+  font-family: "Inter", sans-serif;
+;
+}
 
 
 
@@ -471,14 +522,17 @@ body, #root{
 
 /**footer**/
 .contain{
-  height: auto;
-  width: 100%;
-  /* height: auto; doesnt push the footer to top */
-  z-index: 1;
-  text-align: center;
-  margin-top: auto;
 
-  /* position: absolute; */
+  margin-top: auto;
+  /* position: relative; */
+  
+
+
+/* min-height: 100%;  
+width: 100%; */
+  /* z-index: 1;
+  text-align: center;
+  position: relative; */
 }
 
 
@@ -486,6 +540,7 @@ body, #root{
    color: var(--third-primary);
    font-size: 10px;
    font-weight: bold;
+   text-align: center;
 
 }
 
