@@ -12,11 +12,15 @@ export default function CurrentRead({bookPoster, bookName, AuthorName}){
                 <div className="bookPos">
                     <img className="bookImg" src={bookPoster}></img>
                 </div>
-               <h3 className="bookName">{bookName}</h3>
-               <h4 className="authorName">{AuthorName }</h4>
-               <div className="UpdateProgress">
-                <button className="btn-progress">Update Progress</button>
-               </div>
+
+                <div className="detail">
+                    <h3 className="bookName">{bookName}</h3>
+                    <h4 className="authorName">by {AuthorName }</h4>
+                    <div className="UpdateProgress">
+                        <button className="btn-progress">Update progress</button>
+                    </div>
+
+                </div>
             
             </div>
             
