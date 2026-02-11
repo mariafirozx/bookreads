@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './front/App.js';
 import Home from './front/Home.js';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route , Navigate, replace} from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
@@ -14,7 +14,8 @@ root.render(
   <Router>
     <Routes>
       <Route path ='/' element={<App/>}>
-        <Route path='/home' element={<Home/>}></Route>
+      <Route index element={<Home/>}/>
+      <Route path="home" element ={<Home/>}></Route>
       
       </Route>
 

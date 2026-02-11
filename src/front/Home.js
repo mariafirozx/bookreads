@@ -24,8 +24,6 @@ export default function Home(){
                 bookName={"Come & Get it"}
                 AuthorName={"Kiley Reid"}
                 >
-
-
                 </CurrentRead>
 
             </section>

@@ -1,6 +1,6 @@
 import react from "react";
 import {useState, useEffect} from "react";
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Link, Outlet } from "react-router-dom";
 import bookmark from '../assets/imgs/bookmark.png';
 import dummyavatar from '../assets/imgs/dummy-avatar.jpg';
 import dummyavatar2 from '../assets/imgs/dummy-avatar2.png';
@@ -27,13 +27,13 @@ export default function Navbar(props){
                             <img className="bookmark" src={bookmark}></img>
 
                         </div>
-                        <Link to='home/' className="navbar-brand fw-bold text-dark">{props.title}</Link>
+                        <Link to='/' className="navbar-brand fw-bold text-dark">{props.title}</Link>
                     </div>
 
                         <div className="nav-list">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0"> 
                                 <li className="nav-item">
-                                    <a className="Home active">Home</a>
+                                    <NavLink to='home/' className={({isActive}) => isActive? "nav-item active" : "nav-item"} href="">Home</NavLink>
 
                                 </li>
                                 <li className="nav-item">
