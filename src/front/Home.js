@@ -17,7 +17,12 @@ export default function Home(){
 
         <div className="right-container">
             <section className="current-read">
-                <h5 className="currentHead">Currently Reading</h5>
+                <div className="top">
+
+                    <h5 className="currentHead">Currently Reading</h5>
+                    <a className="see-more"> See more</a>
+                </div>
+
                 <CurrentRead
 
                 bookPoster={bookPos}
@@ -28,9 +33,13 @@ export default function Home(){
 
             </section>
 
-            <div className="want-to-read">
+            <section className="want-to-read">
+                <div className="top">
+                    <h5 className="wantToHead"> Want to Read</h5>
+                    <a className="see-more">See more</a>
+                </div>
 
-            </div>
+            </section>
             
         </div>
         
