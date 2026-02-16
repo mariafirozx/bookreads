@@ -2,7 +2,7 @@ import react from "react";
 import { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import CurrentRead from "./CurrentRead";
-
+import ToRead from "./ToRead";
 /**
  * 
  * import assets
@@ -31,7 +31,10 @@ export default function Home(){
                 >
                 </CurrentRead>
 
+            
+
             </section>
+            <div className="divider"></div>
 
             <section className="want-to-read">
                 <div className="top">
@@ -39,8 +42,13 @@ export default function Home(){
                     <a className="see-more">See more</a>
                 </div>
 
+                <ToRead></ToRead>
+
+
+
             </section>
             
+           
         </div>
         
         </>

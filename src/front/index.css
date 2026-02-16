@@ -28,10 +28,6 @@ body, #root{
     overflow-x: hidden;
     background-color: var(--bg-color);
 }
-
-
-
-
 .main-container{
   /* background-color: aqua; */
     width: 100%;
@@ -434,25 +430,26 @@ body, #root{
 /*current read container*/
 
 .right-container{
+  flex-direction: column;
   /* z-index: 100; */
   position: relative;
   display: block;
   /* justify-content: center; */
   align-items: center;
-  margin: 0 auto ;
-  padding: 19rem 10rem 14rem 14rem;
+  margin: 1rem auto 4rem 2rem ;
+  /* padding: 19rem 10rem 14rem 14rem; */
   /* padding-top: 21em; */
-  top: 2em;
+  top: 0;
   padding-right: 3em;
   /* padding-left: 12rem; */
   width: 530px;
-  height: 130%;
+  height: 100%;
   /* box-sizing: border-box; */
   /* max-width: calc(140% - 2rem); */
   /* max-height: 100vh; */
   margin-left: 65rem;
-  justify-content: flex-start;
-  background-color: #215E61;
+  /* justify-content: flex-start; */
+  /* background-color: #215E61; */
   /* overflow: auto; */
 
 }
@@ -466,13 +463,20 @@ body, #root{
   align-items: flex-start;
   /* padding: 16rem 25rem 10rem 10rem; */
   /* bottom: 20em;
+
+
   right: 14em; */
-  right: 14em;
-  bottom: 18em;
-  width: 530px;
+
+  margin: 2rem auto ;
+
+
+
+  /* right: 14em;
+  bottom: 18em; */
+  width: 550px;
   min-height: 500px;
   padding: 1.5rem;
-  background-color: #FDB5CE;
+  /* background-color: #FDB5CE; */
 }
 
 .top{
@@ -482,6 +486,8 @@ body, #root{
   margin: 1rem 0;
   gap: 5.10em;
 }
+
+
 .see-more{
   align-items: center;
   justify-content: center;
@@ -496,7 +502,7 @@ body, #root{
   align-items: center;
   /* justify-content: left; */
   display: flex;
-  margin-left: 7.5em;
+  margin-left: 4em;
   /* margin: 0 auto; */
   font-size: 15px;
   font-weight: 600;
@@ -599,26 +605,50 @@ body, #root{
   color: var(--primary-color)
 }
 
+.divider{
+  height: 1px;
+  width: 20.5em;
+  background-color: var(--third-primary);
+  margin: 0 auto;
+  opacity: 0.2;
+  
+
+
+}
 
 .want-to-read{
    position: relative;
   display: flex;
-  /* margin: 1rem 0; */
+  margin: 0 auto;
+  
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: #FFCF00;
-  right: 14em;
-  bottom: 18em;
+  /* background-color: #FFCF00; */
+  /* right: 14em;
+  bottom: 18em; */
   width: 530px;
   min-height: 500px;
   padding: 1.5rem;
 
 }
 
+.want-to-read .top,
+.current-read .top{
+  /* background-color: #215E61; */
+}
+
+.current-read,
+.want-to-read{
+  position: static;
+  width: 100%;
+  min-height: 400px;
+  padding: 1.5rem;
+}
+
 .want-to-read .top{
-  margin: 1rem 8rem;
-  gap: 7em;
+  margin: 1rem 3.5rem;
+  gap: 8em;
   justify-content: center;
   align-items: center;
   white-space: nowrap;

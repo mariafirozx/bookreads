@@ -25,7 +25,7 @@ function App() {
                             <a href="https://github.com/mariafirozx" target='_blank'><i className="bi bi-github"></i></a>
                     </div>
                         <p className="text">
-                            designed & created by zahra.
+                            designed & developed by zahra.
 
                         </p>
       </footer>
