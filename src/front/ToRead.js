@@ -6,9 +6,7 @@ export default function ToRead(){
     return(
         <>
         <div className="container-toRead">
-            <div className="books-toRead">
                <Book></Book>
-            </div>
         </div>
         
         </>
