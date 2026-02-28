@@ -27,7 +27,8 @@ export default function Book(){
             {
                 id: 6,
                 poster:  "/imgs/1.jpg"
-            }
+            },
+            
         ];
 
     return(
