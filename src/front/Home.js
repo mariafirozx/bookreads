@@ -11,7 +11,6 @@ import ToRead from "./ToRead";
 import bookPos from "../assets/imgs/34.jpeg";
 
 
-
 export default function Home(){
     const currentRead = [
         {
