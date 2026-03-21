@@ -21,16 +21,16 @@ export default function Home(){
         },
         {
             id: 2,
-            bookPoster: "/imgs/7.jpg",
-            bookName: "Archive of Unknown Universe",
-            AuthorName: "Ruben Ryes JR."
+            bookPoster: "/imgs/14.jpg",
+            bookName: "The Wedding People",
+            AuthorName: "Allison Epoch"
     
         },
         {
             id: 3,
-            bookPoster: "/imgs/7.jpg",
-            bookName: "Archive of Unknown Universe",
-            AuthorName: "Ruben Ryes JR."
+            bookPoster: "/imgs/18.jpg",
+            bookName: "Cosmic Love at the Multiverse Hair Show",
+            AuthorName: "Annie Mare"
         }
     ]
 
@@ -80,6 +80,17 @@ export default function Home(){
             </section>
             
            
+        </div>
+
+
+        <div className="main-page">
+            <section className="trending_books">
+                <h1 className="heading">Trending This Week</h1>
+            </section>
+
+            <section className="todays_rec">
+                <h1 className="heading rec">Todays Recommendation for You</h1>
+            </section>
         </div>
         
         </>
