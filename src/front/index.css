@@ -28,6 +28,7 @@ body, #root{
     overflow-x: auto;
     background-color: var(--bg-color);
 }
+
 .main-container{
   /* background-color: aqua; */
     width: 100%;
@@ -468,7 +469,7 @@ body, #root{
 
   right: 14em; */
 
-  margin: 2rem auto ;
+  margin: 0 auto ;
 
   /* right: 14em;
   bottom: 18em; */
@@ -705,6 +706,21 @@ body, #root{
   max-width: 100px;
   height: 140px;
 }
+
+.main-page{
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem 1rem;
+  position: relative;
+  background-color:#EE6123;
+
+  width: 65%;
+}
+
+
+
+
+
 
 
 

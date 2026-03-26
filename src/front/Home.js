@@ -37,62 +37,65 @@ export default function Home(){
     return(
         <>
 
-        <div className="right-container">
-            <section className="current-read">
-                <div className="top">
+        <div className="homepage">
 
-                    <h5 className="currentHead">Currently Reading</h5>
-                    <a className="see-more"> View All</a>
-                </div>
+            <div className="main-page">
+                <section className="trending_books">
+                    <h1 className="heading">Trending This Week</h1>
+                </section>
 
-                {currentRead.map((curr)=>(
-                    <CurrentRead
-                    bookPoster={curr.bookPoster}
-                    bookName={curr.bookName}
-                    AuthorName={curr.AuthorName}
-                    
-                    ></CurrentRead>
-                ))}
+                <section className="todays_rec">
+                    <h1 className="heading rec">Todays Recommendation for You</h1>
+                </section>
+            </div>
 
-                {/* <CurrentRead
+            <div className="right-container">
+                <section className="current-read">
+                    <div className="top">
 
-                bookPoster={bookPos}
-                bookName={"Come & Get it"}
-                AuthorName={"Kiley Reid"}
-                >
-                </CurrentRead> */}
+                        <h5 className="currentHead">Currently Reading</h5>
+                        <a className="see-more"> View All</a>
+                    </div>
 
+                    {currentRead.map((curr)=>(
+                        <CurrentRead
+                        bookPoster={curr.bookPoster}
+                        bookName={curr.bookName}
+                        AuthorName={curr.AuthorName}
+                        
+                        ></CurrentRead>
+                    ))}
+
+                    {/* <CurrentRead
+
+
+                    bookPoster={bookPos}
+                    bookName={"Come & Get it"}
+                    AuthorName={"Kiley Reid"}
+                    >
+                    </CurrentRead> */}
+
+                
+
+                </section>
+                <div className="divider"></div>
+
+                <section className="want-to-read">
+                    <div className="top">
+                        <h5 className="wantToHead"> Want to Read</h5>
+                        <a className="see-more">View All</a>
+                    </div>
+
+                    <ToRead></ToRead>
+
+
+
+                </section>
+                
             
-
-            </section>
-            <div className="divider"></div>
-
-            <section className="want-to-read">
-                <div className="top">
-                    <h5 className="wantToHead"> Want to Read</h5>
-                    <a className="see-more">View All</a>
-                </div>
-
-                <ToRead></ToRead>
-
-
-
-            </section>
-            
-           
+            </div>
         </div>
 
-
-        <div className="main-page">
-            <section className="trending_books">
-                <h1 className="heading">Trending This Week</h1>
-            </section>
-
-            <section className="todays_rec">
-                <h1 className="heading rec">Todays Recommendation for You</h1>
-            </section>
-        </div>
-        
         </>
     )
 }
