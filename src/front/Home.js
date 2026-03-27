@@ -40,12 +40,16 @@ export default function Home(){
         <div className="homepage">
 
             <div className="main-page">
+                
                 <section className="trending_books">
                     <h1 className="heading">Trending This Week</h1>
+
+                    
                 </section>
 
                 <section className="todays_rec">
                     <h1 className="heading rec">Todays Recommendation for You</h1>
+
                 </section>
             </div>
 
