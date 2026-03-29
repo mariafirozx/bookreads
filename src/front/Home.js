@@ -39,6 +39,33 @@ export default function Home(){
 
         <div className="homepage">
 
+             <div className="left-container">
+                <section className="newsletter">
+                    <div className="newsletter-layout">
+                        <h5 className="headingNews">Newsletter</h5>
+                    
+                        <div className="newsletter-card">
+                            <div className="content">
+                                <h6> TODAYS NEWS</h6>
+                                <h5> TODAYS NEWS</h5>
+                                <h4> TODAYS NEWS</h4>
+                                <h3>TODAYS NEWS</h3>
+                                <h2>TODAYS NEWS</h2>
+                                <h1>TODAYS NEWS</h1>
+                            </div>
+                            
+
+
+
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+             </div>
+
             <div className="main-page">
                 
                 <section className="trending_books">

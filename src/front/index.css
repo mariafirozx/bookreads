@@ -764,7 +764,16 @@ font-weight: 570;
 
 }
 
+.left-container{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 2rem auto;
+  width: 370px;
+  flex-shrink: 0;
 
+  background-color: #FDB5CE;
+}
 
 
 
