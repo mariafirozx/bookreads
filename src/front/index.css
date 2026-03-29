@@ -661,7 +661,7 @@ body, #root{
 .currentHead,
 .wantToHead{
   color: var(--third-primary);
-  font-weight: 570;
+  font-weight: 670;
 }
 .container-toRead{
   justify-content: center;
@@ -769,17 +769,41 @@ font-weight: 570;
   display: flex;
   align-items: center;
   margin: 2rem auto;
-  width: 370px;
+  width: 470px;
   flex-shrink: 0;
 
-  background-color: #FDB5CE;
+  /* background-color: #FDB5CE; */
 }
 
 
+.newsletter{
+  justify-content: center;
+  background: #EE6123;
+  padding: 1rem;
+  border-radius: 12px;
+  position: sticky;
+  top: 80px;
+  /* display: block; */
+  /* margin: 2rem 3rem 4rem;
+  margin-left: 2rem; */
+  /* right: 4rem; */
+  /* position: relative; */
+  /* background-color: var(--secondary-primary);
+  border-radius: 12px;
+  position: sticky;
+  top: 80px; */
+}
 
 
+.headingNews{
+  font-family: "Onest", sans-serif;
+  align-items: center;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 670;
+  color: var(--third-primary);
 
-
+}
 
 /**footer**/
 .contain{
