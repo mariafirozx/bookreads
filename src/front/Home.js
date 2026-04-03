@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import CurrentRead from "./CurrentRead";
 import ToRead from "./ToRead";
+import Newsletter from "./Newsletter";
 /**
  * 
  * import assets
@@ -12,6 +13,7 @@ import bookPos from "../assets/imgs/34.jpeg";
 
 
 export default function Home(){
+
     const currentRead = [
         {
             id: 1,
@@ -34,6 +36,22 @@ export default function Home(){
         }
     ]
 
+    const news = [
+        {
+            id: 1,
+            newsTitle: "5 Most Anticipated Books To Movie Adaptation this Year",
+            newsImage: "/imgs/news.jpg"
+        },
+        // {
+        //     id: 2,
+        //     newsTitle: "Reading is the New Fact Checking in Today's World of Illegal Wars",
+        //     newsImage: "/imgs/news2.jpg"
+        // }
+
+    ]
+
+
+
     return(
         <>
 
@@ -42,24 +60,19 @@ export default function Home(){
              <div className="left-container">
                 <section className="newsletter">
                     <div className="newsletter-layout">
-                        <h5 className="headingNews">Newsletter</h5>
-                    
-                        <div className="newsletter-card">
+                        <h5 className="headingNews">Latest News</h5>
                             <div className="content">
-                                <h6> TODAYS NEWS</h6>
-                                <h5> TODAYS NEWS</h5>
-                                <h4> TODAYS NEWS</h4>
-                                <h3>TODAYS NEWS</h3>
-                                <h2>TODAYS NEWS</h2>
-                                <h1>TODAYS NEWS</h1>
+                                {news.map((newsLetter)=>(
+                                    <Newsletter
+                                        newsTitle={newsLetter.newsTitle}
+                                        newsImage={newsLetter.newsImage}
+                                    >
+
+                                    </Newsletter>
+                                ))}
+
+
                             </div>
-                            
-
-
-
-
-                        </div>
-
                     </div>
 
                 </section>
@@ -70,8 +83,7 @@ export default function Home(){
                 
                 <section className="trending_books">
                     <h1 className="heading">Trending This Week</h1>
-
-                    
+                   
                 </section>
 
                 <section className="todays_rec">
