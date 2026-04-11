@@ -42,11 +42,11 @@ export default function Home(){
             newsTitle: "5 Most Anticipated Books To Movie Adaptation this Year",
             newsImage: "/imgs/news.jpg"
         },
-        // {
-        //     id: 2,
-        //     newsTitle: "Reading is the New Fact Checking in Today's World of Illegal Wars",
-        //     newsImage: "/imgs/news2.jpg"
-        // }
+        {
+            id: 2,
+            newsTitle: "Reading is the New Fact Checking in Today's World of Illegal Wars",
+            newsImage: "/imgs/news2.jpg"
+        }
 
     ]
 
@@ -60,7 +60,10 @@ export default function Home(){
              <div className="left-container">
                 <section className="newsletter">
                     <div className="newsletter-layout">
-                        <h5 className="headingNews">Latest News</h5>
+                        <div className="headingContainer">
+                            <h5 className="headingNews">Latest News</h5>
+
+                        </div>
                             <div className="content">
                                 {news.map((newsLetter)=>(
                                     <Newsletter
