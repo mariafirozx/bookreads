@@ -51,6 +51,11 @@ export default function Home(){
     ]
 
 
+    const trending = [
+        {
+            
+        }
+    ]
 
     return(
         <>
