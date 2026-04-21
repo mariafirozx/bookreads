@@ -10,6 +10,7 @@ export default function Trending({img, title}){
                 <div className="title">{title}</div>
                 <div className="wrapper">
                     <div className="rating">
+
                         
                     </div>
                     
