@@ -1,18 +1,22 @@
 import react from "react";
 import { useState, useEffect } from "react";
 
-export default function Trending({img, title}){
+export default function Trending({img, title, author}){
     return(
         <>
         <div className="trending-books">
             <div className="book">
                 <img src={img}></img>
-                <div className="title">{title}</div>
-                <div className="wrapper">
-                    <div className="rating">
+                <div className="top">
+                    <div className="title">{title}</div>
+                    <span className="author">{author}</span>
 
-                        
-                    </div>
+                </div>
+                    <div className="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <div className="rating-rate">
+                            4.6
+                        </div>
                     
                 </div>
 

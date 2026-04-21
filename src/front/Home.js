@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import CurrentRead from "./CurrentRead";
 import ToRead from "./ToRead";
 import Newsletter from "./Newsletter";
+import Trending from "./Trending";
 /**
  * 
  * import assets
@@ -53,8 +54,16 @@ export default function Home(){
 
     const trending = [
         {
-            
-        }
+            id: 1,
+            img: "/imgs/8.jpg",
+            title: "A marriage at sea",
+            author: "Sophie Elmhirst"
+
+        },
+        // {
+        //     id: 2,
+        //     img: "/img/"
+        // }
     ]
 
     return(
@@ -91,6 +100,15 @@ export default function Home(){
                 
                 <section className="trending_books">
                     <h1 className="heading">Trending This Week</h1>
+
+                    {trending.map((trend)=>(
+
+                        <Trending
+                            img={trend.img}
+                            title={trend.title}
+                            author={trend.author}
+                        ></Trending>
+                    ))}
                    
                 </section>
 
