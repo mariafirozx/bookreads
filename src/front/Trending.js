@@ -7,7 +7,7 @@ export default function Trending({img, title, author}){
         <div className="trending-books">
             <div className="book">
                 <img src={img}></img>
-                <div className="top">
+                <div className="top-book">
                     <div className="title">{title}
 
                         <span className="author">{author}</span>
