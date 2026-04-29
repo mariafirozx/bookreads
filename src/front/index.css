@@ -26,7 +26,7 @@ body, #root{
     width: 100%;
     min-height: 100vh;
     /* overflow-y: auto; */
-    overflow-x: auto;
+    overflow-x: hidden;
     background-color: var(--bg-color);
 }
 
@@ -461,7 +461,7 @@ body, #root{
 
   right: 14em; */
 
-  margin: 1rem auto ;
+  margin: 1rem 1.5rem ;
 
   /* right: 14em;
   bottom: 18em; */
@@ -719,12 +719,12 @@ body, #root{
   flex: 1;
   justify-content: center;
   /* align-items: center; */
-  margin: 2rem 1rem; 
+  margin: 2rem 0; 
   /* position: absolute; */
   /* background-color:#EE6123; */
   max-width: 990px;
   top: 0;
-  margin-left: 1px;
+  margin-right: 5rem;
 
 }
 
@@ -735,13 +735,13 @@ body, #root{
   /* justify-content: center; */
   align-items: center;
   margin: 1rem auto;
-  background-color: #c2d2d3;
-  margin-bottom: 10em;
+ margin-bottom: 10em;
+ display: flex;
   
 
 }
 
-.trending_books h1{
+.heading{
   font-family: "Onest", sans-serif;
   font-size: 25px;
   color: var(--third-primary);
@@ -770,7 +770,7 @@ body, #root{
   justify-content: flex-start;
   display: flex;
   /* align-items: center; */
-  margin: 0.1rem 1.4rem;
+  margin: 2rem 1.4rem;
   width: 430px;
   flex-shrink: 0;
   position: flex;
@@ -839,7 +839,7 @@ body, #root{
   margin-top: -40px;
   /* margin: 0.1rem 0.2rem auto; */
   /* background-color: #999; */
-  width: 260px;
+  width: 250px;
   
 }
 
@@ -891,22 +891,32 @@ body, #root{
 
 
 /*trending books section*/
-.trending-books{
-  display: block;
+.trending-books-section{
+  display: flex;
   justify-content: flex-start;
   margin: 2rem 1rem;
 }
+
 .book{
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: #EE6123;
-  width: 110px;
-  height: 240px;
+  background-color: var(--secondary-primary);
+  width: 130px;
+  min-height: 260px;
+  height: auto;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  flex: 1;
+
+}
+
+.book:hover{
+  cursor: pointer;
 
 }
 
 .book img{
-  max-width: 111px;
+  max-width: 131px;
 
 }
 
@@ -917,46 +927,65 @@ body, #root{
   /* margin: 0.5rem; */
   
   margin-top: 0.4rem;
-  margin-left: 0.5em;
+  margin-left: 0.7em;
   font-family: "Onest", sans-serif;
-  font-size: 15px;
+  font-size: 13px;
+  gap: 0.4rem;
   
   /* white-space: n; */
   
 }
 
 .top-book .title{
-  flex: 1;
+  /* flex: 1; */
   white-space: normal;
   word-break: break-word;
   overflow-wrap: break-word;
   line-height: 1em;
-  
-  
+  font-weight: 450;
+
 }
+
+
 
 .top-book .author{
   flex-shrink: 0;
   font-size: 8px;
+  margin-left: 0.7em;
+  font-weight: 400;
   /* margin-top: 21px; */
 }
 
 .rating{
   display: flex;
   gap: 0.2rem;
-  font-size: 13px;
+  font-size: 10px;
+  margin-left: 0.6rem;
+  margin-top: 0.2rem;
 
 }
 .rating i{
   color: var(--primary-color);
 }
 
+.selective-btn .btn{
+  justify-content: center;
+  align-items: flex-start;
+  display: block;
+  width: 130px;
+  height: 30px;
+}
 
-
-
-
-
-
+.selective-btn .dropdown-menu{
+    justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 3px;
+  background-color: var(--third-primary);
+  /* top: 2.8em; */
+  margin: 0 auto;
+  padding: 1rem 2rem 1rem 1rem;
+}
 
 
 

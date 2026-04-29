@@ -60,10 +60,13 @@ export default function Home(){
             author: "Sophie Elmhirst"
 
         },
-        // {
-        //     id: 2,
-        //     img: "/img/"
-        // }
+        {
+            id: 2,
+            img: "/imgs/16.jpg",
+            title: "Welcome to the Hyunam-Dong Bookshop",
+            author: "Hwang Bo-Reum"
+
+        }
     ]
 
     return(
@@ -98,8 +101,8 @@ export default function Home(){
 
             <div className="main-page">
                 
+            <h1 className="heading">Trending This Week</h1>
                 <section className="trending_books">
-                    <h1 className="heading">Trending This Week</h1>
 
                     {trending.map((trend)=>(
 
