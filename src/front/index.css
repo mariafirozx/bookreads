@@ -778,8 +778,6 @@ body, #root{
 
   /* background-color: #FDB5CE; */
 }
-
-
 .newsletter{
   /* background: var(--newsletter-card); */
   border: 2px solid var(--third-primary);
@@ -884,7 +882,6 @@ body, #root{
 
 }
 .news-title:hover{
-
   text-decoration: underline;
   color: var(--third-primary);
 }
@@ -902,12 +899,13 @@ body, #root{
   align-items: flex-start;
   background-color: var(--secondary-primary);
   width: 130px;
-  min-height: 260px;
+  min-height: 310px;
   height: auto;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   flex: 1;
-
+  position: relative;
+  overflow: hidden;
 }
 
 .book:hover{
@@ -925,14 +923,11 @@ body, #root{
   flex-direction: column;
   align-items: flex-start;
   /* margin: 0.5rem; */
-  
   margin-top: 0.4rem;
   margin-left: 0.7em;
   font-family: "Onest", sans-serif;
   font-size: 13px;
   gap: 0.4rem;
-  
-  /* white-space: n; */
   
 }
 
@@ -945,8 +940,6 @@ body, #root{
   font-weight: 450;
 
 }
-
-
 
 .top-book .author{
   flex-shrink: 0;
@@ -964,16 +957,31 @@ body, #root{
   margin-top: 0.2rem;
 
 }
+
 .rating i{
   color: var(--primary-color);
 }
 
 .selective-btn .btn{
+  /* justify-content: center;
+  align-items: flex-start;
+  display: block;
+  
+  font-size: 10px; */
+
+
+}
+
+.btn-secondary{
   justify-content: center;
   align-items: flex-start;
   display: block;
-  width: 130px;
-  height: 30px;
+  height: 27.6px;
+  margin: 0;
+  position: absolute;
+  
+  font-size: 10px;
+
 }
 
 .selective-btn .dropdown-menu{
@@ -987,32 +995,24 @@ body, #root{
   padding: 1rem 2rem 1rem 1rem;
 }
 
-
-
 /**footer**/
 .contain{
-
   margin-top: auto;
   background-color: var(--primary-color);
  
 }
-
-
 .text {
    color: var(--third-primary);
    font-size: 10px;
    font-weight: bold;
    text-align: center;
-
 }
-
 .icons{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 12px;
-    margin-bottom: 5px;
-    
+    margin-bottom: 5px;   
 }
 
 .icons a i {
