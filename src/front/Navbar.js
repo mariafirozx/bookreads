@@ -44,7 +44,7 @@ export default function Navbar(props){
 
                                     {OpenDropdown === 'browse' && (
 
-                                        <ul className="list dropdown-menu show ">
+                                        <ul className="list dropdown-menu show">
                                             <h4 className="favGenreTitle">Favorite Genres</h4>
                                             <li><a className="dropdown-item" href="#">Fantasy</a></li>
                                             <li><a className="dropdown-item" href="#">Fiction</a></li>

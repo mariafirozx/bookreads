@@ -975,7 +975,7 @@ body, #root{
 .btn-secondary{
   justify-content: center;
   align-items: flex-start;
-  display: block;
+  
   height: 27.6px;
   margin: 0;
   position: absolute;
@@ -985,14 +985,14 @@ body, #root{
 }
 
 .selective-btn .dropdown-menu{
-    justify-content: center;
+  justify-content: center;
   align-items: center;
   position: relative;
   border-radius: 3px;
   background-color: var(--third-primary);
   /* top: 2.8em; */
-  margin: 0 auto;
-  padding: 1rem 2rem 1rem 1rem;
+  margin: 1rem auto;
+  padding: 0.5rem 2rem 1rem 1rem;
 }
 
 /**footer**/
