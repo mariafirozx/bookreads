@@ -159,9 +159,6 @@ export default function Home(){
                     </div>
 
                     <ToRead></ToRead>
-
-
-
                 </section>
                 
             

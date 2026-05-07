@@ -351,7 +351,6 @@ body, #root{
 }
 
 .dropdown-item:hover{
-
   background-color: var(--secondary-primary);
   color: var(--primary-color);
   border-radius: 30px;
@@ -738,7 +737,6 @@ body, #root{
  margin-bottom: 10em;
  display: flex;
   
-
 }
 
 .heading{
@@ -894,6 +892,7 @@ body, #root{
   margin: 2rem 1rem;
 }
 
+
 .book{
   justify-content: flex-start;
   align-items: flex-start;
@@ -915,7 +914,6 @@ body, #root{
 
 .book img{
   max-width: 131px;
-
 }
 
 .book .top-book{
@@ -932,7 +930,6 @@ body, #root{
 }
 
 .top-book .title{
-  /* flex: 1; */
   white-space: normal;
   word-break: break-word;
   overflow-wrap: break-word;
@@ -975,11 +972,9 @@ body, #root{
 .btn-secondary{
   justify-content: center;
   align-items: flex-start;
-  
   height: 27.6px;
   margin: 0;
   position: absolute;
-  
   font-size: 10px;
 
 }
