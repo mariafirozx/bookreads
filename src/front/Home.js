@@ -103,15 +103,20 @@ export default function Home(){
                 
             <h1 className="heading">Trending This Week</h1>
                 <section className="trending_books">
+                    <div className="tb-track">
 
-                    {trending.map((trend)=>(
+                        {trending.map((trend,i)=>(
 
-                        <Trending
-                            img={trend.img}
-                            title={trend.title}
-                            author={trend.author}
-                        ></Trending>
-                    ))}
+                            <Trending
+                                key={trend.id}
+                                rank={i+1}
+                                img={trend.img}
+                                title={trend.title}
+                                author={trend.author}
+                            ></Trending>
+                        ))}
+                    </div>
+
                    
                 </section>
 
