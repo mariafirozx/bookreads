@@ -6,8 +6,9 @@
   --primary-color: #FFCF00;
   --secondary-primary: #EE6123; 
   --third-primary: #215E61;
-  --card--primary: #FDB5CE;
+  --card--primary: #f1efe1;
   --newsletter-card: #f4723a;
+
   
 }
 
@@ -832,8 +833,6 @@ body, #root{
   align-items: flex-start;
   display: block;
   margin-top: -40px;
-  /* margin: 0.1rem 0.2rem auto; */
-  /* background-color: #999; */
   width: 250px;
   
 }
@@ -878,6 +877,7 @@ body, #root{
   font-family: "Onest", sans-serif;
 
 }
+
 .news-title:hover{
   text-decoration: underline;
   color: var(--third-primary);
@@ -903,12 +903,13 @@ body, #root{
   display: flex;
   flex-direction: column;
   position: relative;
-  transition: transform 140ms ease, box-shadow 140ms ease;
+  /* transition: transform 140ms ease, box-shadow 140ms ease; */
 }
-.tb-card:hover {
+
+/* .tb-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 28px rgba(33, 94, 97, 0.18);
-}
+} */
 .tb-rank {
   position: absolute;
   top: 8px; left: 8px;
@@ -921,6 +922,7 @@ body, #root{
   z-index: 2;
   border: 1.5px solid var(--third-primary);
 }
+
 .tb-cover {
   width: 100%;
   height: 192px;
@@ -934,6 +936,7 @@ body, #root{
   flex-direction: column;
   gap: 4px;
   flex: 1;
+  background-color: var(--card--primary);
 }
 .tb-name {
   font-family: "Fira Sans", sans-serif;
@@ -945,11 +948,13 @@ body, #root{
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
 .tb-author {
   font-size: 10px;
   color: #888;
   font-family: "Onest", sans-serif;
 }
+
 .tb-stars {
   display: flex;
   align-items: center;
@@ -957,12 +962,14 @@ body, #root{
   font-size: 10px;
   color: var(--primary-color);
 }
+
 .tb-rating-num {
   font-size: 10px;
   color: #555;
   margin-left: 3px;
   font-weight: 500;
 }
+
 .tb-wtr-btn {
   width: 100%;
   margin-top: 6px;

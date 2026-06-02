@@ -56,7 +56,7 @@ export default function Home(){
         {
             id: 1,
             img: "/imgs/8.jpg",
-            title: "A marriage at sea",
+            title: "A Marriage at Sea",
             author: "Sophie Elmhirst"
 
         },
