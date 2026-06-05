@@ -50,10 +50,10 @@ export default function Trending({img, title, author, rank}){
                 </div>
                 <div className="tb-btn">
                     <div className="dropdown">
-                        <button className="tb-wtr-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button className="tb-wtr-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-flip="false">
                             Want to Read
                         </button>
-                        <ul className="dropdown-menu">
+                        <ul className="dropdown-menu dropdown-menu-start tb-dropdown">
                             <li><a className="dropdown-item" href="#">Want to Read</a></li>
                             <li><a className="dropdown-item" href="#">Currently Reading</a></li>
                             <li><a className="dropdown-item" href="#">Read</a></li>

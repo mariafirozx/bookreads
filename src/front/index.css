@@ -386,7 +386,6 @@ body, #root{
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  
 }
 
 .user-name{
@@ -898,7 +897,7 @@ body, #root{
   flex: 0 0 148px;
   background: #fff;
   border-radius: 14px;
-  overflow: hidden;
+  overflow: visible;
   border: 1.5px solid var(--third-primary);
   display: flex;
   flex-direction: column;
@@ -929,15 +928,20 @@ body, #root{
   object-fit: cover;
   display: block;
   border-bottom: 1.5px solid var(--third-primary);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
+
 .tb-body {
   padding: 0.6rem 0.7rem 0.8rem;
   display: flex;
   flex-direction: column;
+  /* align-items: flex-start; */
   gap: 4px;
   flex: 1;
   background-color: var(--card--primary);
 }
+
 .tb-name {
   font-family: "Fira Sans", sans-serif;
   font-size: 13px; font-weight: 600;
@@ -988,6 +992,18 @@ body, #root{
   background: var(--secondary-primary);
   color: var(--primary-color);
 }
+
+.tb-dropdown{
+  background-color: var(--third-primary);
+  border: 1.5px solid var(--third-primary);
+  border-radius: 8px;
+  padding: 0.4rem 0.3rem;
+  min-width: 140px;
+  z-index: 9999;
+}
+
+
+
 
 /* .trending-books-section{
   display: flex;
