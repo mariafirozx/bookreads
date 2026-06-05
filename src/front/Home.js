@@ -82,8 +82,9 @@ export default function Home(){
 
                         </div>
                             <div className="content">
-                                {news.map((newsLetter)=>(
+                                {news.map((newsLetter,i)=>(
                                     <Newsletter
+                                        key={i}
                                         newsTitle={newsLetter.newsTitle}
                                         newsImage={newsLetter.newsImage}
                                     >
@@ -134,8 +135,9 @@ export default function Home(){
                         <a className="see-more"> View All</a>
                     </div>
 
-                    {currentRead.map((curr)=>(
+                    {currentRead.map((curr,i)=>(
                         <CurrentRead
+                        key={i}
                         bookPoster={curr.bookPoster}
                         bookName={curr.bookName}
                         AuthorName={curr.AuthorName}
