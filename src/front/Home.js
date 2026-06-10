@@ -58,14 +58,25 @@ export default function Home(){
             img: "/imgs/8.jpg",
             title: "A Marriage at Sea",
             author: "Sophie Elmhirst"
-
         },
         {
             id: 2,
             img: "/imgs/16.jpg",
             title: "Welcome to the Hyunam-Dong Bookshop",
             author: "Hwang Bo-Reum"
+        },
+        {   
+            id:3,
+            img: "/imgs/1.jpg",
+            title: "Finding Grace",
+            author: "Loretta Rothschild"
 
+        },
+        {
+            id: 4,
+            img: "/imgs/14.jpg",
+            title: "The Wedding People",
+            author: "Alison Espach"
         }
     ]
 

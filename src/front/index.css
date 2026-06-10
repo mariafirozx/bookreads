@@ -721,9 +721,9 @@ body, #root{
   margin: 2rem 0; 
   /* position: absolute; */
   /* background-color:#EE6123; */
-  max-width: 990px;
+  /* max-width: 990px; */
   top: 0;
-  margin-right: 5rem;
+  right: 5rem;
 
 }
 
@@ -885,13 +885,18 @@ body, #root{
 
 /*trending books section*/
 .tb-track {
+  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
   display: flex;
   gap: 14px;
   overflow-x: auto;
   padding-bottom: 6rem;
   scrollbar-width: none;
-  width: 450px;
+  width: 530px;
+  min-height: 500px;
 }
+
 .tb-track::-webkit-scrollbar { display: none; }
 
 .tb-btn{
