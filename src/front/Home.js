@@ -12,7 +12,6 @@ import Trending from "./Trending";
 
 import bookPos from "../assets/imgs/34.jpeg";
 
-
 export default function Home(){
 
     const currentRead = [
@@ -40,17 +39,20 @@ export default function Home(){
     const news = [
         {
             id: 1,
+            newsTag: "Adaptations",
+            newsDate: "May 2025",
             newsTitle: "5 Most Anticipated Books To Movie Adaptation this Year",
             newsImage: "/imgs/news.jpg"
         },
         {
             id: 2,
+            newsTag: "Culture",
+            newsDate: "May 2025",
             newsTitle: "Reading is the New Fact Checking in Today's World of Illegal Wars",
             newsImage: "/imgs/news2.jpg"
         }
 
     ]
-
 
     const trending = [
         {
@@ -77,6 +79,31 @@ export default function Home(){
             img: "/imgs/14.jpg",
             title: "The Wedding People",
             author: "Alison Espach"
+        }, 
+        {
+            id: 5,
+            img: "/imgs/26.jpeg",
+            title: "loren posem",
+            author: "Emily"
+        },
+        {
+            id: 6,
+            img: "/imgs/27.jpg",
+            title: "The Blond Who Came In From The Gold",
+            author: "Ally Carter"
+        },
+        {
+             id: 7,
+            img: "/imgs/35.jpeg",
+            title: "Blood Over Bright Haven",
+            author: "M.L. Wang"
+
+        },
+        {
+             id: 8,
+            img: "/imgs/37.jpeg",
+            title: "Writing for Busy Readers",
+            author: "Todd Rogers & Jessica Lasky-Fink"
         }
     ]
 
@@ -86,7 +113,7 @@ export default function Home(){
         <div className="homepage">
 
              <div className="left-container">
-                <section className="newsletter">
+                {/* <section className="newsletter">
                     <div className="newsletter-layout">
                         <div className="headingContainer">
                             <h5 className="headingNews">Latest News</h5>
@@ -107,7 +134,32 @@ export default function Home(){
                             </div>
                     </div>
 
-                </section>
+                </section> */}
+
+                    <section className="newsletter">
+                        <div className="nl-widget">
+                            <div className="nl-header">
+                                <div className="nl-header-inner">
+                                    <div className="nl-dot"></div>
+                                    <h5 className="headingNews">Latest News</h5>
+                                </div>
+                            </div>
+                            <div className="nl-body">
+                                {news.map((n) => (
+                                    <Newsletter
+                                        key={n.id}
+                                        newsTitle={n.newsTitle}
+                                        newsImage={n.newsImage}
+                                        newsTag={n.newsTag}
+                                        newsDate={n.newsDate}
+                                    />
+                                ))}
+                            </div>
+                            <div className="nl-footer">
+                                <a className="nl-see-all">View all news →</a>
+                            </div>
+                        </div>
+                    </section>
 
              </div>
 
@@ -116,17 +168,20 @@ export default function Home(){
             <h1 className="heading">Trending This Week</h1>
                 <section className="trending_books">
                     <div className="tb-track">
+                        <div className="grid-container-tb">
 
-                        {trending.map((trend,i)=>(
+                            {trending.map((trend,i)=>(
 
-                            <Trending
-                                key={trend.id}
-                                rank={i+1}
-                                img={trend.img}
-                                title={trend.title}
-                                author={trend.author}
-                            ></Trending>
-                        ))}
+                                <Trending
+                                    key={trend.id}
+                                    rank={i+1}
+                                    img={trend.img}
+                                    title={trend.title}
+                                    author={trend.author}
+                                ></Trending>
+                            ))}
+                        </div>
+
                     </div>
 
                    
