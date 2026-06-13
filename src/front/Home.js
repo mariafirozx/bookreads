@@ -49,7 +49,7 @@ export default function Home(){
             newsTag: "Culture",
             newsDate: "May 2025",
             newsTitle: "Reading is the New Fact Checking in Today's World of Illegal Wars",
-            newsImage: "/imgs/news2.jpg"
+            newsImage: "/imgs/news2.1.jpg"
         }
 
     ]
