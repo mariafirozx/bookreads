@@ -1,3 +1,7 @@
+/**
+ * 
+ * import assets
+ */
 import react from "react";
 import { useState, useEffect } from "react";
 import Navbar from "./Navbar";
@@ -5,10 +9,7 @@ import CurrentRead from "./CurrentRead";
 import ToRead from "./ToRead";
 import Newsletter from "./Newsletter";
 import Trending from "./Trending";
-/**
- * 
- * import assets
- */
+import BookCard from "./BookCard";
 
 import bookPos from "../assets/imgs/34.jpeg";
 
@@ -172,13 +173,14 @@ export default function Home(){
 
                             {trending.map((trend,i)=>(
 
-                                <Trending
+                                <BookCard
                                     key={trend.id}
                                     rank={i+1}
                                     img={trend.img}
                                     title={trend.title}
                                     author={trend.author}
-                                ></Trending>
+                                    type="trending"
+                                ></BookCard>
                             ))}
                         </div>
 
@@ -187,8 +189,13 @@ export default function Home(){
                    
                 </section>
 
+            <h1 className="heading rec">Todays Recommendation for You</h1>
                 <section className="todays_rec">
-                    <h1 className="heading rec">Todays Recommendation for You</h1>
+                    <div className="rb-track">
+                        <div className="grid-container-rb">
+                            
+                        </div>
+                    </div>
 
                 </section>
             </div>
