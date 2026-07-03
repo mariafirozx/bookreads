@@ -8,6 +8,7 @@
   --third-primary: #215E61;
   --card--primary: #f1efe1;
   --newsletter-card: #f4723a;
+  --secondary--card: #eddc8f;
 
   
 }
@@ -764,8 +765,13 @@ body, #root{
 
 .todays_rec{
   flex: 1;
-  align-items: center;
-  margin: 0 auto 5rem;
+  align-items: flex-start;
+  margin: 2rem auto 5rem;  
+  padding-bottom: 2em;
+  justify-content: flex-start;
+  overflow: visible;
+  display: flex;
+
   /* background-color: #215E61; */
 
 }
@@ -1181,27 +1187,37 @@ body, #root{
 
 /*rb book section*/
 .rb-track{
-  position: relative;
   flex-direction: row;
-  align-items: flex-start;
   display: flex;
-  overflow: auto;
+  gap: 14px;
+  align-items: flex-start;
+  margin: 0 auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 6rem;
   scrollbar-width: none;
-  width: 640px;
-  height: 500px;
+  padding-right: 2rem;
+  min-width: 770px;
+  width: 100%;
 }
 
 .grid-container-rb{
-  justify-content: center;
+   justify-content: center;
   align-items: center;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid: 1rem ;
-  margin: 0;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin: 0 auto;
+  width: 400%;
 }
 .rb-track::-webkit-scrollbar{display: none;}
 
-
+.rb-track .tb-body{
+  background-color: var(--secondary--card);
+}
+.rb-track .tb-stars{
+  color: var(--third-primary);
+}
 
 /* .trending-books-section{
   display: flex;
@@ -1295,6 +1311,12 @@ body, #root{
   margin: 1rem auto;
   padding: 0.5rem 2rem 1rem 1rem;
 } */
+
+
+
+
+
+
 
 /**footer**/
 .contain{

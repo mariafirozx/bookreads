@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route , Navigate, replace} from 'react
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-import './front/index.css';
+import './styles/index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

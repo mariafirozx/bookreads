@@ -7,7 +7,10 @@ export default function BookCard({img, title, author, rank, type = "trending"}){
         <>
 
             <div className= {`tb-card ${type}`}>
+            {rank && 
+            
                 <span className="tb-rank">{rank}</span>
+            }
                 <img src={img} alt={title} className="tb-cover" />
                 <div className="tb-body">
                     <div className="tb-name">{title}</div>
