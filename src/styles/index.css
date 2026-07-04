@@ -1319,7 +1319,7 @@ body, #root{
 
 
 /**footer**/
-.contain{
+/* .contain{
   margin-top: auto;
   background-color: var(--primary-color);
  
@@ -1342,4 +1342,4 @@ body, #root{
     font-size: 1rem;
     color: var(--third-primary);
 
-}
+} */

@@ -2,7 +2,7 @@ import React from "react";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Navbar from "./Navbar";
 import { Outlet } from 'react-router';
-
+import Footer from "./Footer";
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
       </div>
       
 
-      <footer className="contain">
+      {/* <footer className="contain">
 
                     <div className='icons'>
                             <a href='https://www.linkedin.com/in/marya-fairoz/' target='_blank'><i className="bi bi-linkedin"></i></a>
@@ -29,7 +29,9 @@ function App() {
                             designed & developed by zahra.
 
                         </p>
-      </footer>
+      </footer> */}
+
+      <Footer props={"bookreads"}/>
 
     </div>
 
