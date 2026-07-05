@@ -1,6 +1,6 @@
 import React from "react";
 import 'bootstrap-icons/font/bootstrap-icons.css';
-
+// import LandingPage from "./LandingPage";
 import Navbar from "./Navbar";
 import { Outlet } from 'react-router';
 import Footer from "./Footer";
@@ -8,7 +8,10 @@ import Footer from "./Footer";
 
 function App() {
   return (
-    <>      
+    <>    
+    {/* <div className="landing">
+      <Outlet></Outlet>
+    </div>   */}
     <div className="main-container">
 
       <Navbar title="Bookreads"></Navbar>

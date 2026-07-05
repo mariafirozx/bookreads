@@ -1,6 +1,6 @@
 import react from "react";
 import "../styles/Landing.css";
-import {landingPic} from "../assets/imgs/landingPic.jpg"
+import landingPic from "../assets/imgs/landingPic.jpg"
 
 
 export default function LandingPage({onGetStarted, onSignin}){
@@ -18,7 +18,7 @@ export default function LandingPage({onGetStarted, onSignin}){
                     <a className="lp2-nav-link">Browse</a>
                     <a className="lp2-nav-link">Community</a>
                     <a className="lp2-nav-link">About</a>
-                    <button className="lp2-signin" onClick={onSignIn}>Sign In</button>
+                    <button className="lp2-signin" onClick={onSignin}>Sign In</button>
                 </div>
             </nav>
 

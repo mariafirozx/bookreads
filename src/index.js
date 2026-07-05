@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './front/App.js';
+import LandingPage from './front/LandingPage.js';
 import Home from './front/Home.js';
 import { BrowserRouter as Router, Routes, Route , Navigate, replace} from 'react-router-dom';
 
@@ -13,9 +14,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Router>
     <Routes>
-      <Route path ='/' element={<App/>}>
-      <Route index element={<Home/>}/>
-      <Route path="home" element ={<Home/>}></Route>
+      <Route path='/' element={<LandingPage/>}></Route>
+      <Route element={<App/>}>
+        {/* <Route index element ={<LandingPage/>}/> */}
+
+        {/* <Route index element={<Home/>}/>  */}
+         <Route path="home" element ={<Home/>}></Route>
       
       </Route>
 
