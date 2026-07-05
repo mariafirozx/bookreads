@@ -1,0 +1,171 @@
+.lp2 {
+  font-family: "Onest", sans-serif;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
+  background: var(--third-primary);
+}
+
+.lp2-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2.5rem;
+  background: var(--third-primary);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.lp2-logo {
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.logo-dot {
+  width: 9px; height: 9px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.lp2-nav-links { display: flex; gap: 1.2rem; align-items: center; }
+
+.lp2-nav-link {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 13px; font-weight: 500;
+  cursor: pointer; text-decoration: none;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  transition: all 150ms;
+}
+.lp2-nav-link:hover { color: var(--primary-color); background: rgba(255,255,255,0.07); }
+
+.lp2-signin {
+  background: var(--primary-color);
+  color: var(--third-primary);
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-size: 13px; font-weight: 700;
+  cursor: pointer;
+  font-family: "Onest", sans-serif;
+  transition: all 150ms;
+}
+.lp2-signin:hover { background: var(--secondary-primary); color: #fff; }
+
+/* SPLIT HERO */
+.lp2-hero {
+  display: grid;
+  grid-template-columns: 44% 56%;
+  height: 100%;
+}
+
+/* LEFT */
+.lp2-left {
+  background: var(--third-primary);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lp2-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary-color);
+  font-size: 10px; font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 1.6rem;
+}
+.lp2-eyebrow span {
+  width: 20px; height: 1.5px;
+  background: var(--primary-color);
+  display: inline-block;
+}
+
+.lp2-h1 {
+  font-size: 54px; font-weight: 900;
+  color: #fff;
+  line-height: 1.02;
+  margin-bottom: 1.3rem;
+  letter-spacing: -0.03em;
+}
+.lp2-h1 em { color: var(--primary-color); font-style: normal; display: block; }
+
+.lp2-sub {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.7;
+  margin-bottom: 2.4rem;
+  max-width: 300px;
+}
+
+.lp2-btns { display: flex; gap: 0.75rem; margin-bottom: 3rem; flex-wrap: wrap; }
+
+.btn-go {
+  background: var(--secondary-primary);
+  color: #fff; border: none;
+  padding: 0.9rem 1.7rem;
+  border-radius: 10px;
+  font-size: 14px; font-family: "Onest", sans-serif; font-weight: 700;
+  cursor: pointer; transition: all 180ms;
+}
+.btn-go:hover { background: #d45a1a; transform: translateY(-2px); box-shadow: 0 10px 24px rgba(238,97,35,0.35); }
+
+.btn-ghost {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  padding: 0.9rem 1.7rem;
+  border-radius: 10px;
+  font-size: 14px; font-family: "Onest", sans-serif; font-weight: 600;
+  cursor: pointer; transition: all 180ms;
+}
+.btn-ghost:hover { border-color: var(--primary-color); color: var(--primary-color); }
+
+.lp2-stats {
+  display: flex; gap: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.8rem;
+}
+.lp2-stat span { display: block; font-size: 22px; font-weight: 800; color: var(--primary-color); }
+.lp2-stat p { font-size: 11px; color: rgba(255,255,255,0.5); font-weight: 500; margin-top: 2px; }
+
+/* RIGHT — illustration */
+.lp2-right {
+  position: relative;
+  overflow: hidden;
+}
+
+.lp2-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;   /* ✅ shows the girl + shelves, not the floor */
+  display: block;
+}
+
+/* teal dissolve from the left edge into the painting */
+.edge-fade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    var(--third-primary) 0%,
+    rgba(33, 94, 97, 0.5) 25%,
+    transparent 55%
+  );
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .lp2-hero { grid-template-columns: 1fr; }
+  .lp2-right { display: none; }
+  .lp2-h1 { font-size: 38px; }
+}
