@@ -21,10 +21,10 @@ export default function LandingPage({onGetStarted, onSignin}){
 
                 <div className="lp2-hero-content">
                     <div className="lp2-eyebrow"><span></span>For every kind of imaginary</div>
-                    <h1 className="lp2-h1">Discover<br />Your Next<em>Chapter.</em></h1>
-                    <p className="lp2-sub">Track your books, uncover your next great read, and connect with a community that lives for stories.</p>
+                    <h1 className="lp2-h1">Deciding Your Next<em>Read?</em></h1>
+                    <p className="lp2-sub">You have come to right place! Here you can track, discover and talk about your recent books. From unlocking thousands of books to building a community, we offer you all.</p>
                     <div className="lp2-btns">
-                        <button className="btn-go" onClick={onGetStarted}>Get Started — Free</button>
+                        <button className="btn-go" onClick={onGetStarted}>Get Started for Free</button>
                         <button className="btn-ghost">Browse Books →</button>
                     </div>
                     <div className="lp2-stats">

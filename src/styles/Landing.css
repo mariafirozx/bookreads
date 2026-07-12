@@ -11,20 +11,69 @@
 .lp2 {
   font-family: "Onest", sans-serif;
   height: 100vh;
+  /* position: relative; */
  
   display: grid;
   grid-template-columns: 54% 46%;
   overflow: hidden;
-  background: var(--third-primary-try);
+  /* background: var(--third-primary-try); */
 }
 
 .lp2-left {
+  background: var(--third-primary-try);
+
   display: flex;
   flex-direction: column;
   padding: 1.2rem 3rem 1rem;
   min-height: 0;
-  overflow: hidden;
+  overflow: visible;
+  z-index: 5;
+  margin-right: -30px;
+  position: relative;
+     border-top-right-radius: 35px;
+    border-bottom-right-radius:35px;
+
+  /* border-radius: 20px; */
+  /* background-color: var(--primary-color); */
 }
+
+.lp2-left::after{
+    content:"";
+    position:absolute;
+
+    top:0;
+    right:-18px;
+
+    width:110px;
+    height:100%;
+
+    background: linear-gradient(
+    to right,
+    var(--third-primary-try)
+    color-mix(in srgb, var(--third-primary-try) 60%, transparent) 35%,
+    color-mix(in srgb, var(--third-primary-try) 22%, transparent) 65%,
+    transparent 100%
+  );
+    backdrop-filter:blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+
+    border-radius:0 35px 35px 0 / 0 35% 35% 0;
+    clip-path: ellipse(95% 100% at left center);
+
+}
+/* .lp2-left::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50rem;
+  width: 120px;
+  height: 100%;
+  background: color-mix(in srgb, var(--third-primary-try) 50%, transparent);
+  backdrop-filter: blur(5px);
+  border-radius: 0 60px 60px 0 / 0 50% 50% 0;
+  z-index: 3;
+  pointer-events: none;
+} */
 
 .lp2-nav {
   display: flex;
@@ -32,6 +81,8 @@
   justify-content: space-between;
   padding-bottom: 2rem;
   gap: 1.8rem;
+  margin-right: 6rem;
+
 }
 
 .lp2-logo {
@@ -96,10 +147,11 @@
   align-items: center;
   gap: 3px;
   color: var(--primary-color);
-  font-size: 10px; font-weight: 700;
+  font-size: 10px; 
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.3rem;
 }
 .lp2-eyebrow span {
   width: 20px; height: 1.5px;
@@ -108,24 +160,35 @@
 }
 
 .lp2-h1 {
-  font-size: 54px; 
+  font-size: 77px; 
   font-weight: 900;
   color: #fff;
   line-height: 1.02;
   margin-bottom: 1.3rem;
   letter-spacing: -0.03em;
+
 }
-.lp2-h1 em { color: var(--primary-color); font-style: normal; display: block; }
+.lp2-h1 em { 
+  color: var(--primary-color); 
+  font-style: italic; 
+  display: block; 
+ font-family: "Fira Sans", sans-serif;
+
+}
 
 .lp2-sub {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.65);
   line-height: 1.7;
   margin-bottom: 2.4rem;
-  max-width: 300px;
+  max-width: 470px;
 }
 
-.lp2-btns { display: flex; gap: 0.75rem; margin-bottom: 3rem; flex-wrap: wrap; }
+.lp2-btns { 
+  display: flex; 
+  gap: 1.2rem; 
+  margin-bottom: 3rem; 
+  flex-wrap: wrap; }
 
 .btn-go {
   background: var(--secondary-primary);
@@ -161,6 +224,7 @@
   position: relative;
   overflow: hidden;
   min-height: 0;
+  z-index: 1;
     /* padding: 2.5rem 3rem 2.5rem 4rem; */
 
 
@@ -175,8 +239,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position:  25% 70%;   /* ✅ shows the girl + shelves, not the floor */
-  /* border-radius: 20px; */
+  object-position:  80% 40%;  
   display: block;
 }
 
