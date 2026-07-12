@@ -1,5 +1,5 @@
 .site-footer {
-  background-color: var(--third-primary);
+  background-color: var(--third-primary-try);
   margin-top: 4rem;
   padding: 3rem 4rem 0;
   font-family: "Onest", sans-serif;
@@ -118,7 +118,7 @@
 .footer-social a:hover {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
-  color: var(--third-primary);
+  color: var(--third-primary-try);
   transform: translateY(-2px);
 }
 

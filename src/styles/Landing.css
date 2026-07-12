@@ -1,37 +1,56 @@
+/* .lp2-page {
+  min-height: 100vh;
+  background: #ececea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: "Onest", sans-serif;
+} */
+
 .lp2 {
   font-family: "Onest", sans-serif;
   height: 100vh;
+ 
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-columns: 54% 46%;
   overflow: hidden;
-  background: var(--third-primary);
-  overflow: auto;
+  background: var(--third-primary-try);
+}
+
+.lp2-left {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem 3rem 1rem;
+  min-height: 0;
+  overflow: hidden;
 }
 
 .lp2-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2.5rem;
-  background: var(--third-primary);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 2rem;
+  gap: 1.8rem;
 }
 
 .lp2-logo {
-  color: var(--primary-color);
-  font-size: 20px;
-  font-weight: 900;
+
+ color: var(--primary-color) !important;
+  font-size: 30px;
+  font-family: "Sekuya", system-ui;
+  font-weight: 200;
   display: flex;
   align-items: center;
-  gap: 7px;
+  flex-shrink: 0;
 }
 
-.logo-dot {
+/* .logo-dot {
   width: 9px; height: 9px;
   background: var(--primary-color);
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.3);
-}
+} */
 
 .lp2-nav-links { display: flex; gap: 1.2rem; align-items: center; }
 
@@ -55,29 +74,27 @@
   cursor: pointer;
   font-family: "Onest", sans-serif;
   transition: all 150ms;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .lp2-signin:hover { background: var(--secondary-primary); color: #fff; }
 
-/* SPLIT HERO */
-.lp2-hero {
-  display: grid;
-  grid-template-columns: 44% 56%;
-  height: 100%;
-}
-
-/* LEFT */
-.lp2-left {
-  background: var(--third-primary);
-  padding: 3rem;
+/*  hero */
+.lp2-hero-content{
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 0;
 }
+
+/* LEFT */
+
 
 .lp2-eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 3px;
   color: var(--primary-color);
   font-size: 10px; font-weight: 700;
   text-transform: uppercase;
@@ -91,7 +108,8 @@
 }
 
 .lp2-h1 {
-  font-size: 54px; font-weight: 900;
+  font-size: 54px; 
+  font-weight: 900;
   color: #fff;
   line-height: 1.02;
   margin-bottom: 1.3rem;
@@ -142,18 +160,28 @@
 .lp2-right {
   position: relative;
   overflow: hidden;
+  min-height: 0;
+    /* padding: 2.5rem 3rem 2.5rem 4rem; */
+
+
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 3rem 2.5rem 4rem;
+  background: var(--third-primary); */
 }
 
 .lp2-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;   /* ✅ shows the girl + shelves, not the floor */
+  object-position:  25% 70%;   /* ✅ shows the girl + shelves, not the floor */
+  /* border-radius: 20px; */
   display: block;
 }
 
 /* teal dissolve from the left edge into the painting */
-.edge-fade {
+/* .edge-fade {
   position: absolute;
   inset: 0;
   background: linear-gradient(
@@ -163,7 +191,7 @@
     transparent 55%
   );
   pointer-events: none;
-}
+} */
 
 @media (max-width: 768px) {
   .lp2-hero { grid-template-columns: 1fr; }
