@@ -27,7 +27,7 @@ export default function Navbar(props){
                             <img className="bookmark" src={bookmark}></img>
 
                         </div>
-                        <Link to='/' className="navbar-brand fw-bold text-dark">{props.title}</Link>
+                        <Link to='/home' className="navbar-brand fw-bold text-dark">{props.title}</Link>
                     </div>
 
                         <div className="nav-list">

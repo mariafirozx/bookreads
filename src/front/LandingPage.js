@@ -1,12 +1,18 @@
 import react from "react";
+import { useNavigate } from 'react-router-dom';
 import "../styles/Landing.css";
 import landingPic from "../assets/imgs/landingPic3.jpg"
 
 
 export default function LandingPage({onGetStarted, onSignin}){
+    const navigate = useNavigate();
+
+    const handleSignIn = ()=>{
+        onSignin?.() || navigate('/home');
+    }
+
     return(
         <>
-
           <div className="lp2">
             <div className="lp2-left">
                 <nav className="lp2-nav">
@@ -16,7 +22,7 @@ export default function LandingPage({onGetStarted, onSignin}){
                         <a className="lp2-nav-link">Community</a>
                         <a className="lp2-nav-link">About</a>
                     </div>
-                    <button className="lp2-signin" onClick={onSignin}>Sign in</button>
+                    <button className="lp2-signin" onClick={handleSignIn}>Sign in</button>
                 </nav>
 
                 <div className="lp2-hero-content">

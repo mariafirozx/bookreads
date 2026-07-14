@@ -21,17 +21,16 @@
 
 .lp2-left {
   background: var(--third-primary-try);
-
   display: flex;
   flex-direction: column;
   padding: 1.2rem 3rem 1rem;
   min-height: 0;
   overflow: visible;
   z-index: 5;
-  margin-right: -30px;
+  margin-right: -19px;
   position: relative;
-     border-top-right-radius: 35px;
-    border-bottom-right-radius:35px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius:30px;
 
   /* border-radius: 20px; */
   /* background-color: var(--primary-color); */
@@ -40,13 +39,10 @@
 .lp2-left::after{
     content:"";
     position:absolute;
-
     top:0;
-    right:-18px;
-
-    width:110px;
+    right: -25px;
+    width:80px;
     height:100%;
-
     background: linear-gradient(
     to right,
     var(--third-primary-try)
@@ -57,8 +53,8 @@
     backdrop-filter:blur(22px);
     -webkit-backdrop-filter: blur(22px);
 
-    border-radius:0 35px 35px 0 / 0 35% 35% 0;
-    clip-path: ellipse(95% 100% at left center);
+    border-radius:0 40px 40px 0 / 0 20% 20% 0;
+    clip-path: ellipse(88% 110% at left center);
 
 }
 /* .lp2-left::after {
@@ -80,14 +76,14 @@
   align-items: center;
   justify-content: space-between;
   padding-bottom: 2rem;
-  gap: 1.8rem;
-  margin-right: 6rem;
+  gap: 1rem;
+  margin-right: 2rem;
 
 }
 
 .lp2-logo {
 
- color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
   font-size: 30px;
   font-family: "Sekuya", system-ui;
   font-weight: 200;
@@ -103,7 +99,7 @@
   border: 2px solid rgba(255, 255, 255, 0.3);
 } */
 
-.lp2-nav-links { display: flex; gap: 1.2rem; align-items: center; }
+.lp2-nav-links { display: flex; gap: 0.6rem; align-items: center; }
 
 .lp2-nav-link {
   color: rgba(255, 255, 255, 0.75);
@@ -181,7 +177,7 @@
   color: rgba(255, 255, 255, 0.65);
   line-height: 1.7;
   margin-bottom: 2.4rem;
-  max-width: 470px;
+  max-width: 490px;
 }
 
 .lp2-btns { 
@@ -224,7 +220,9 @@
   position: relative;
   overflow: hidden;
   min-height: 0;
+
   z-index: 1;
+ 
     /* padding: 2.5rem 3rem 2.5rem 4rem; */
 
 
@@ -239,8 +237,10 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position:  80% 40%;  
+  object-position: 80% 40%;  
   display: block;
+  
+  
 }
 
 /* teal dissolve from the left edge into the painting */
