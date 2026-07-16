@@ -8,15 +8,24 @@
   font-family: "Onest", sans-serif;
 } */
 
-.lp2 {
+.lp2{
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+  
+}
+
+
+.hero-section {
   font-family: "Onest", sans-serif;
   height: 100vh;
-  /* position: relative; */
+  /* min-height: 100vh; */
  
   display: grid;
   grid-template-columns: 54% 46%;
   overflow: hidden;
-  /* background: var(--third-primary-try); */
 }
 
 .lp2-left {
@@ -243,7 +252,13 @@
   
 }
 
-/* teal dissolve from the left edge into the painting */
+/*section - features*/
+
+
+
+
+
+
 /* .edge-fade {
   position: absolute;
   inset: 0;

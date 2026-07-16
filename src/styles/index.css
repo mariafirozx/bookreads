@@ -29,6 +29,7 @@ body, #root{
     min-height: 100vh;
     /* overflow-y: auto; */
     overflow-x: hidden;
+    /* scrollbar-color: var(--primary-color); */
     background-color: var(--bg-color);
 }
 
