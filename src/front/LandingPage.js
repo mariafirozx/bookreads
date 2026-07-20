@@ -53,9 +53,11 @@ export default function LandingPage({onGetStarted, onSignin}){
                 </section>
 
                 <section className="features-section">
-                    <div className="features-container">
-                        
-                    </div>
+                    <div className="left"></div>
+
+                    <div className="right"></div>
+
+
                 </section>
             </div>
         

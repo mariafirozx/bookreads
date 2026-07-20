@@ -18,13 +18,12 @@ export default function Navbar(props){
     return(
         <>
         <div className="navContainer">
-            <nav className="navbar navbar-expand-lg sticky-top navbar-light ">
+            <nav className="navbar navbar-expand-lg sticky-top navbar-light ">3
                 <div className="container-fluid">
 
                     <div className="brand">
 
                         <div className="bookmarkImg">
-                            <img className="bookmark" src={bookmark}></img>
 
                         </div>
                         <Link to='/home' className="navbar-brand fw-bold text-dark">{props.title}</Link>

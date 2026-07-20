@@ -1,14 +1,14 @@
 .features-section{
   font-family: "Onest", sans-serif;
-  display: block;
+  display: grid;
+  grid-template-columns: 50% 50%;
   height: 100vh;
   /* padding: 5rem 2.5rem; */
   /* grid-template-columns: 54% 46%; */
   overflow: hidden;
-  background-color: var(--secondary-primary);
 }
 
-.features-container{
+.left{
     /* width: 100%;
     max-width: 1100px;
     min-height: 0;
@@ -20,12 +20,19 @@
 
     background-color:black; */
 
-    width: 50%;
-  height: 200px;  
-  margin: 5rem auto;
-  position: relative; 
-  justify-content: center;
-  align-items: center;
+  background-color: var(--third-primary-try);
+
+ 
   display: flex;
-  background-color: black; 
+  flex-direction: column;
+  padding: 1.2rem 3rem 1rem;
+  min-height: 0;
+  overflow: visible;
+  /* z-index: 5; */
+  margin-right: -25px;
+  position: relative;
+}
+
+.right{
+  position: relative;
 }
