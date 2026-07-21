@@ -18,7 +18,7 @@ export default function Navbar(props){
     return(
         <>
         <div className="navContainer">
-            <nav className="navbar navbar-expand-lg sticky-top navbar-light ">3
+            <nav className="navbar navbar-expand-lg sticky-top navbar-light ">
                 <div className="container-fluid">
 
                     <div className="brand">

@@ -53,9 +53,22 @@ export default function LandingPage({onGetStarted, onSignin}){
                 </section>
 
                 <section className="features-section">
-                    <div className="left"></div>
 
-                    <div className="right"></div>
+
+                        <div className="left">
+                            
+                        </div>
+
+                        <div className="right"></div>
+                        <div className="features-headline">
+
+                            <div className="lp2-eyebrow features"><span></span>Featured Features</div>
+
+                            <h1 className="headline"> A place to remember your books & share your current obsession with friends</h1>
+                            <p className="sub-features">Everything you need to track your books, categorize, and search up trending and most read books by the community</p>
+
+                        </div>
+
 
 
                 </section>
