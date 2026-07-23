@@ -37,18 +37,48 @@
 
 .features-headline{
  position: absolute;
-  top: 25%;
-  left: 36%;
+  top: 40%;
+  left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
   width: 90%; 
-  max-width: 1000px;
+  max-width: 1500px;
   text-align: flex-start;
   overflow: hidden;  
   pointer-events: none; 
+  
 }
 
 .headline{
-  font-size: 55px;
-  width: 59rem;
+  font-size: 65px;
+  width: 55rem;
+  color: var(--secondary-primary);
+  font-weight: 800;
+}
+
+.headline span{
+  color: var(--primary-color);
+}
+
+.sub-features{
+  font-size: 18px;
+  color: rgba(70, 69, 69, 0.65);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  max-width: 396px;
+  font-weight: 450;
+  margin-top: 1.5rem;
+  text-align: flex-start;
+
+}
+
+.features-headline .lp2-eyebrow{
+  margin-right: 15rem;
+}
+
+.feature-img{
+  align-items: flex-end;
+  max-width: 580px;
+  border-radius: 20px;
+  height: 410px;
 }
