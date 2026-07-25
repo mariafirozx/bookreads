@@ -171,13 +171,14 @@
   line-height: 1.02;
   margin-bottom: 1.3rem;
   letter-spacing: -0.03em;
+  
 
 }
 .lp2-h1 em { 
   color: var(--primary-color); 
   font-style: italic; 
   display: block; 
- font-family: "Fira Sans", sans-serif;
+  font-family: "Goudy Bookletter 1911", serif;
 
 }
 

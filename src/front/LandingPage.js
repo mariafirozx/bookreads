@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import "../styles/Landing.css";
 import "../styles/Features.css";
 import landingPic from "../assets/imgs/landingPic3.jpg"
-import featureIMG from "../assets/imgs/features-sec.jpg"
+import featureIMG from "../assets/imgs/features-sec2.jpg"
 
 
 export default function LandingPage({onGetStarted, onSignin}){
@@ -55,11 +55,23 @@ export default function LandingPage({onGetStarted, onSignin}){
 
                 <section className="features-section">
                         <div className="left">
-                            
+                            <div className="arrow-pointer">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                    <path 
+                                    d="M10 40 Q30 30, 50 50 M50 50 L40 45 M50 50 L45 60" 
+                                    stroke="var(--secondary-primary)" 
+                                    strokeWidth="3" 
+                                    strokeLinecap="round" 
+                                    strokeLinejoin="round"
+                                    fill="none"
+                                    />
+                                </svg>
+                            </div>
                         </div>
 
                         <div className="right">
                             <img src={featureIMG} className="feature-img"/>
+                            <h2 className="corner-headline" data-position="first">Your Archive.</h2>
                         </div>
                         <div className="features-headline">
 
@@ -68,6 +80,14 @@ export default function LandingPage({onGetStarted, onSignin}){
                             <h1 className="headline"> A place to remember your <span>books & share </span> your current obsession with friends.</h1>
                             <p className="sub-features">Everything you need to track your books, categorize, and search up trending and most read books by the community</p>
 
+                        </div>
+
+                        <div className="features-cards">
+                            <div className="card-container">
+                                <div className="card-img">
+                                    <img></img>
+                                </div>
+                            </div>
                         </div>
 
 
