@@ -67,6 +67,16 @@ export default function LandingPage({onGetStarted, onSignin}){
                                     />
                                 </svg>
                             </div>
+
+                             <div className="features-cards">
+                            <div className="card-container">
+                                <div className="card-img">
+                                    <img></img>
+                                </div>
+                            </div>
+                        </div>
+
+
                         </div>
 
                         <div className="right">
@@ -82,13 +92,13 @@ export default function LandingPage({onGetStarted, onSignin}){
 
                         </div>
 
-                        <div className="features-cards">
+                        {/* <div className="features-cards">
                             <div className="card-container">
                                 <div className="card-img">
                                     <img></img>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
 
 
 

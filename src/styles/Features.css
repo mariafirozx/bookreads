@@ -115,3 +115,13 @@
   100% { text-shadow: 0 0 10px rgba(255, 207, 0, 0); }
 }
 
+.features-cards{
+  background-color: black;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  margin: 0 auto;
+  width: 200px;
+  height: 100px;
+  position: relative;
+}
