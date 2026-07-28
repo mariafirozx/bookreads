@@ -2,9 +2,12 @@ import react from "react";
 import { useNavigate } from 'react-router-dom';
 import "../styles/Landing.css";
 import "../styles/Features.css";
-import landingPic from "../assets/imgs/landingPic3.jpg"
-import featureIMG from "../assets/imgs/features-sec2.jpg"
-
+import landingPic from "../assets/imgs/landingPic3.jpg";
+import featureIMG from "../assets/imgs/features-sec-3.jpg";
+// import bookCover1 from "../assets/imgs/34.jpeg";
+import featTrack from "../assets/imgs/track.png";
+import featRec from "../assets/imgs/smartRec.png";
+import featCom from "../assets/imgs/community.png";
 
 export default function LandingPage({onGetStarted, onSignin}){
     const navigate = useNavigate();
@@ -55,7 +58,7 @@ export default function LandingPage({onGetStarted, onSignin}){
 
                 <section className="features-section">
                         <div className="left">
-                            <div className="arrow-pointer">
+                            {/* <div className="arrow-pointer">
                                 <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
                                     <path 
                                     d="M10 40 Q30 30, 50 50 M50 50 L40 45 M50 50 L45 60" 
@@ -66,22 +69,54 @@ export default function LandingPage({onGetStarted, onSignin}){
                                     fill="none"
                                     />
                                 </svg>
-                            </div>
+                            </div> */}
 
                              <div className="features-cards">
-                            <div className="card-container">
-                                <div className="card-img">
-                                    <img></img>
+                                <div className="feat-card">
+                                    <img src={featTrack} alt="track" className="feat-cover Track" />
+                                    <div className="feat-info">
+                                        <div className="feat-title">Long Island Girls</div>
+                                        {/* <div className="book-author">by Gabrielle Korn</div> */}
+                                        <p className="feat-desc">A story told against the indie music scene of the early 2000s.</p>
+                                        {/* <div className="book-genres">
+                                            <span className="genre-tag">Contemporary</span>
+                                            <span className="genre-tag">LGBTQA+</span>
+                                        </div> */}
+                                    </div>
                                 </div>
+                                <div className="feat-card">
+                                    <img src={featRec} alt="recommendation" className="feat-cover Rec" />
+                                    <div className="feat-info">
+                                        <div className="feat-title">Long Island Girls</div>
+                                        {/* <div className="book-author">by Gabrielle Korn</div> */}
+                                        <p className="feat-desc">A story told against the indie music scene of the early 2000s.</p>
+                                        {/* <div className="book-genres">
+                                            <span className="genre-tag">Contemporary</span>
+                                            <span className="genre-tag">LGBTQA+</span>
+                                        </div> */}
+                                    </div>
+                                </div>        
+
+                                <div className="feat-card">
+                                    <img src={featCom} alt="community" className="feat-cover Com" />
+                                    <div className="feat-info">
+                                        <div className="feat-title">Long Island Girls</div>
+                                        {/* <div className="book-author">by Gabrielle Korn</div> */}
+                                        <p className="feat-desc">A story told against the indie music scene of the early 2000s.</p>
+                                        {/* <div className="book-genres">
+                                            <span className="genre-tag">Contemporary</span>
+                                            <span className="genre-tag">LGBTQA+</span>
+                                        </div> */}
+                                    </div>
+                                </div>                                                
                             </div>
-                        </div>
 
 
                         </div>
 
                         <div className="right">
-                            <img src={featureIMG} className="feature-img"/>
-                            <h2 className="corner-headline" data-position="first">Your Archive.</h2>
+                            {/* <img src={featureIMG} className="feature-img"/> */}
+                            {/* <h2 className="corner-headline" data-position="first">Your Archive.</h2> */}
                         </div>
                         <div className="features-headline">
 
@@ -91,17 +126,6 @@ export default function LandingPage({onGetStarted, onSignin}){
                             <p className="sub-features">Everything you need to track your books, categorize, and search up trending and most read books by the community</p>
 
                         </div>
-
-                        {/* <div className="features-cards">
-                            <div className="card-container">
-                                <div className="card-img">
-                                    <img></img>
-                                </div>
-                            </div>
-                        </div> */}
-
-
-
                 </section>
             </div>
         
