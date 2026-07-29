@@ -5,7 +5,7 @@ import "../styles/Features.css";
 import landingPic from "../assets/imgs/landingPic3.jpg";
 import featureIMG from "../assets/imgs/features-sec-3.jpg";
 // import bookCover1 from "../assets/imgs/34.jpeg";
-import featTrack from "../assets/imgs/track.png";
+import featTrack from "../assets/imgs/track2.png";
 import featRec from "../assets/imgs/smartRec.png";
 import featCom from "../assets/imgs/community.png";
 
@@ -57,67 +57,13 @@ export default function LandingPage({onGetStarted, onSignin}){
                 </section>
 
                 <section className="features-section">
-                        <div className="left">
-                            {/* <div className="arrow-pointer">
-                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                                    <path 
-                                    d="M10 40 Q30 30, 50 50 M50 50 L40 45 M50 50 L45 60" 
-                                    stroke="var(--secondary-primary)" 
-                                    strokeWidth="3" 
-                                    strokeLinecap="round" 
-                                    strokeLinejoin="round"
-                                    fill="none"
-                                    />
-                                </svg>
-                            </div> */}
+                        {/* <div className="left">
+                        
+                        </div> */}
 
-                             <div className="features-cards">
-                                <div className="feat-card">
-                                    <img src={featTrack} alt="track" className="feat-cover Track" />
-                                    <div className="feat-info">
-                                        <div className="feat-title">Long Island Girls</div>
-                                        {/* <div className="book-author">by Gabrielle Korn</div> */}
-                                        <p className="feat-desc">A story told against the indie music scene of the early 2000s.</p>
-                                        {/* <div className="book-genres">
-                                            <span className="genre-tag">Contemporary</span>
-                                            <span className="genre-tag">LGBTQA+</span>
-                                        </div> */}
-                                    </div>
-                                </div>
-                                <div className="feat-card">
-                                    <img src={featRec} alt="recommendation" className="feat-cover Rec" />
-                                    <div className="feat-info">
-                                        <div className="feat-title">Long Island Girls</div>
-                                        {/* <div className="book-author">by Gabrielle Korn</div> */}
-                                        <p className="feat-desc">A story told against the indie music scene of the early 2000s.</p>
-                                        {/* <div className="book-genres">
-                                            <span className="genre-tag">Contemporary</span>
-                                            <span className="genre-tag">LGBTQA+</span>
-                                        </div> */}
-                                    </div>
-                                </div>        
-
-                                <div className="feat-card">
-                                    <img src={featCom} alt="community" className="feat-cover Com" />
-                                    <div className="feat-info">
-                                        <div className="feat-title">Long Island Girls</div>
-                                        {/* <div className="book-author">by Gabrielle Korn</div> */}
-                                        <p className="feat-desc">A story told against the indie music scene of the early 2000s.</p>
-                                        {/* <div className="book-genres">
-                                            <span className="genre-tag">Contemporary</span>
-                                            <span className="genre-tag">LGBTQA+</span>
-                                        </div> */}
-                                    </div>
-                                </div>                                                
-                            </div>
-
-
-                        </div>
-
-                        <div className="right">
-                            {/* <img src={featureIMG} className="feature-img"/> */}
-                            {/* <h2 className="corner-headline" data-position="first">Your Archive.</h2> */}
-                        </div>
+                        {/* <div className="right">
+                            
+                        </div> */}
                         <div className="features-headline">
 
                             <div className="lp2-eyebrow features"><span></span>Featured Features</div>
@@ -126,6 +72,46 @@ export default function LandingPage({onGetStarted, onSignin}){
                             <p className="sub-features">Everything you need to track your books, categorize, and search up trending and most read books by the community</p>
 
                         </div>
+
+                         <div className="features-cards">
+                                <div className="feat-card track">
+                                    <img src={featTrack} alt="track" className="feat-cover Track" />
+                                    <div className="feat-info">
+                                        <div className="feat-title">Track your books</div>
+                                        {/* <div className="book-author">by Gabrielle Korn</div> */}
+                                        <p className="feat-desc">categorize, shelf and set daily reading challenges so you can always keep track of the books you are reading, loved and remember.</p>
+                                        {/* <div className="book-genres">
+                                            <span className="genre-tag">Contemporary</span>
+                                            <span className="genre-tag">LGBTQA+</span>
+                                        </div> */}
+                                    </div>
+                                </div>
+                                <div className="feat-card rec">
+                                    <img src={featRec} alt="recommendation" className="feat-cover Rec" />
+                                    <div className="feat-info">
+                                        <div className="feat-title">Get daily recommendations</div>
+                                        {/* <div className="book-author">by Gabrielle Korn</div> */}
+                                        <p className="feat-desc">afraid of getting readers block? not anymore. we will give you daily book recommendations based on what you are reading, love and engage on. </p>
+                                        {/* <div className="book-genres">
+                                            <span className="genre-tag">Contemporary</span>
+                                            <span className="genre-tag">LGBTQA+</span>
+                                        </div> */}
+                                    </div>
+                                </div>        
+
+                                <div className="feat-card com">
+                                    <img src={featCom} alt="community" className="feat-cover Com" />
+                                    <div className="feat-info">
+                                        <div className="feat-title">Build your community</div>
+                                        {/* <div className="book-author">by Gabrielle Korn</div> */}
+                                        <p className="feat-desc">Meet other bookaholics who share your same interests, and passion for reading. Engage with them, leave a comment, rate and chat with friends!</p>
+                                        {/* <div className="book-genres">
+                                            <span className="genre-tag">Contemporary</span>
+                                            <span className="genre-tag">LGBTQA+</span>
+                                        </div> */}
+                                    </div>
+                                </div>                                                
+                            </div>
                 </section>
             </div>
         
