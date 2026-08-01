@@ -74,29 +74,38 @@ export default function LandingPage({onGetStarted, onSignin}){
                         </div>
 
                          <div className="features-cards">
+                            
+                            <div className="feat-stack">
+
                                 <div className="feat-card track">
                                     <img src={featTrack} alt="track" className="feat-cover Track" />
                                     <div className="feat-info">
                                         <div className="feat-title">Track your books</div>
                                         {/* <div className="book-author">by Gabrielle Korn</div> */}
-                                        <p className="feat-desc">categorize, shelf and set daily reading challenges so you can always keep track of the books you are reading, loved and remember.</p>
+                                        <p className="feat-desc">Categorize, shelf and set daily reading challenges so you can always keep track of the books you are reading, loved and remember.</p>
                                         {/* <div className="book-genres">
                                             <span className="genre-tag">Contemporary</span>
                                             <span className="genre-tag">LGBTQA+</span>
                                         </div> */}
                                     </div>
+                                     <div className="feat-arrow">
+                                        <i className="bi bi-arrow-right"></i>
+                                    </div>   
                                 </div>
                                 <div className="feat-card rec">
                                     <img src={featRec} alt="recommendation" className="feat-cover Rec" />
                                     <div className="feat-info">
                                         <div className="feat-title">Get daily recommendations</div>
                                         {/* <div className="book-author">by Gabrielle Korn</div> */}
-                                        <p className="feat-desc">afraid of getting readers block? not anymore. we will give you daily book recommendations based on what you are reading, love and engage on. </p>
+                                        <p className="feat-desc">Afraid of getting readers block? not anymore. we will give you daily book recommendations based on what you are reading, love and engage on. </p>
                                         {/* <div className="book-genres">
                                             <span className="genre-tag">Contemporary</span>
                                             <span className="genre-tag">LGBTQA+</span>
                                         </div> */}
                                     </div>
+                                      <div className="feat-arrow">
+                                        <i className="bi bi-arrow-right"></i>
+                                    </div>  
                                 </div>        
 
                                 <div className="feat-card com">
@@ -110,7 +119,13 @@ export default function LandingPage({onGetStarted, onSignin}){
                                             <span className="genre-tag">LGBTQA+</span>
                                         </div> */}
                                     </div>
-                                </div>                                                
+                                      <div className="feat-arrow">
+                                        <i className="bi bi-arrow-right"></i>
+                                    </div>  
+                                </div>   
+                            </div>
+
+                                                                         
                             </div>
                 </section>
             </div>
