@@ -8,6 +8,7 @@ import featureIMG from "../assets/imgs/features-sec-3.jpg";
 import featTrack from "../assets/imgs/track2.png";
 import featRec from "../assets/imgs/smartRec.png";
 import featCom from "../assets/imgs/community.png";
+import HowItWorks from "./HowItWorks.js";
 
 export default function LandingPage({onGetStarted, onSignin}){
     const navigate = useNavigate();
@@ -127,6 +128,10 @@ export default function LandingPage({onGetStarted, onSignin}){
 
                                                                          
                             </div>
+                </section>
+
+                <section className="hiw-section">
+                    <HowItWorks/>
                 </section>
             </div>
         

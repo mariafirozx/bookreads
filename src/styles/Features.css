@@ -20,6 +20,8 @@
   position: relative;  
   overflow: visible;
   padding-top: 3.5rem;
+      padding-bottom:18rem;
+
 
    background:
         linear-gradient(
@@ -121,8 +123,9 @@
 
   /**new new*/
   margin: 1rem auto;
-  width: 59rem;
-  font-size: clamp(55px, 5vw, 82px);
+  width: 67rem;
+  font-size: clamp(59px, 8vw, 86px);
+  /* font-size: 83px; */
   color: var(--secondary-primary);
   font-weight: 800;
   line-height: 1.05;
@@ -137,11 +140,11 @@
 
 .sub-features{
   font-size: 18px;
-  color: rgba(70, 69, 69, 0.65);
+  color: var(--third-primary);
   line-height: 1.7;
   margin-bottom: 2rem;
   max-width: 498px;
-  font-weight: 450;
+  font-weight: 550;
   margin-top: 1.5rem;
   text-align: flex-start;
 
@@ -245,7 +248,8 @@
     width: 100%;
 
     padding: 4rem 3rem 8rem;
-    bottom: 6rem;
+    bottom: 4rem;
+    /* margin-top: 1rem; */
 
     flex-wrap: wrap;
 }
@@ -338,29 +342,45 @@
         0 45px 90px rgba(0,0,0,.28);
 }
 
-.feature-stack:hover .feat-card:not(:hover){
+/* .feat-stack:hover .feat-card:not(:hover){
 
-    transform:scale(.93);
+    transform:scale(.90);
 
     filter:brightness(.8);
 
     opacity:.75;
-}
+} */
 
 .track:hover ~ .rec{
 
     transform:
         rotate(12deg)
-        translateX(20px);
+        translateX(180px);
+    
 }
 
 .track:hover ~ .com{
 
     transform:
         rotate(-14deg)
-        translateX(40px);
+        translateX(190px);
+    
+}
+.features-cards:has(.rec:hover) .track {
+    transform: translateX(-150px) rotate(-10deg);
 }
 
+.features-cards:has(.com:hover) .rec {
+    transform: translateX(-150px) rotate(-14deg);
+}
+.features-cards:has(.com:hover) .track {
+    transform: translateX(-198px) rotate(-35deg);
+}
+.rec:hover ~ .com{
+  transform: 
+          rotate(-14deg)
+          translateX(170px);
+}
 
 .feat-cover {
   width: 100%;
