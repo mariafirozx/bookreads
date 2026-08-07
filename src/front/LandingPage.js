@@ -1,7 +1,9 @@
 import react from "react";
 import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from "react";
 import "../styles/Landing.css";
 import "../styles/Features.css";
+import "../styles/HowItWorks.css";
 import landingPic from "../assets/imgs/landingPic3.jpg";
 import featureIMG from "../assets/imgs/features-sec-3.jpg";
 // import bookCover1 from "../assets/imgs/34.jpeg";
@@ -17,6 +19,7 @@ export default function LandingPage({onGetStarted, onSignin}){
         onSignin?.() || navigate('/home');
     }
 
+   
     return(
         <>
           <div className="lp2">
