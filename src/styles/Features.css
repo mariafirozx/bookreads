@@ -21,6 +21,7 @@
   overflow: visible;
   padding-top: 3.5rem;
   padding-bottom: 1rem;
+  isolation: isolate;
 
 
    background:
@@ -31,6 +32,172 @@
             var(--third-primary-try) 50%,
             var(--third-primary-try) 100%
         );
+}
+/* .features-halftone {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+} */
+
+/* =========================================
+   ORGANIC WAVY BACKGROUND
+========================================= */
+
+.features-wave-bg {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+
+    pointer-events: none;
+
+    overflow: hidden;
+}
+
+.features-wave-svg {
+    position: absolute;
+
+    width: 160%;
+    height: 100%;
+
+    left: -25%;
+    top: 0;
+
+    overflow: visible;
+}
+
+/* Main wave */
+
+.wave {
+    transform-origin: center;
+}
+
+.wave-1 {
+    fill: var(--third-primary-try);
+
+    animation:
+    organicWave 14s ease-in-out infinite;
+}
+
+@keyframes organicWave {
+
+    0% {
+        transform: translateX(-3%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(3%) translateY(-18px);
+    }
+
+    100% {
+        transform: translateX(-3%) translateY(0);
+    }
+
+}
+.wave-2 {
+    fill: var(--primary-color);
+
+    opacity: .95;
+
+    animation:
+        waveFloat2 15s ease-in-out infinite alternate;
+}
+
+
+
+.wave-3 {
+    fill: var(--secondary-primary);
+
+    opacity: .70;
+
+    animation:
+        waveFloat3 18s ease-in-out infinite alternate;
+}
+
+
+@keyframes waveFloat1 {
+
+    0% {
+        transform:
+            translateX(-20px)
+            translateY(0)
+            scaleY(1);
+    }
+
+    50% {
+        transform:
+            translateX(20px)
+            translateY(-15px)
+            scaleY(1.03);
+    }
+
+    100% {
+        transform:
+            translateX(-10px)
+            translateY(10px)
+            scaleY(.98);
+    }
+
+}
+
+
+@keyframes waveFloat2 {
+
+    0% {
+        transform:
+            translateX(20px)
+            translateY(10px)
+            scaleY(1);
+    }
+
+    50% {
+        transform:
+            translateX(-25px)
+            translateY(-20px)
+            scaleY(1.05);
+    }
+
+    100% {
+        transform:
+            translateX(15px)
+            translateY(5px)
+            scaleY(.97);
+    }
+
+}
+
+
+@keyframes waveFloat3 {
+
+    0% {
+        transform:
+            translateX(-10px)
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateX(30px)
+            translateY(-15px);
+    }
+
+    100% {
+        transform:
+            translateX(-20px)
+            translateY(10px);
+    }
+
+}
+.features-headline,
+.features-cards{
+
+    position:relative;
+
+    z-index:5;
 }
 
 .left{
@@ -105,7 +272,6 @@
     z-index: 5;
     text-align: left;
 }
-
 
 .headline{
   /* font-size: 65px;

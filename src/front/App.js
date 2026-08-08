@@ -13,10 +13,8 @@ function App() {
       <Outlet></Outlet>
     </div>   */}
     <div className="main-container">
-
+      
       <Navbar title="Bookreads"></Navbar>
-
-
       <div className="content">
         <Outlet></Outlet>
         

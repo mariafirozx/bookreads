@@ -6,6 +6,7 @@ import "../styles/Features.css";
 import "../styles/HowItWorks.css";
 import landingPic from "../assets/imgs/landingPic3.jpg";
 import featureIMG from "../assets/imgs/features-sec-3.jpg";
+import pageGif from "../assets/imgs/page.gif";
 // import bookCover1 from "../assets/imgs/34.jpeg";
 import featTrack from "../assets/imgs/track2.png";
 import featRec from "../assets/imgs/smartRec.png";
@@ -61,13 +62,65 @@ export default function LandingPage({onGetStarted, onSignin}){
                 </section>
 
                 <section className="features-section">
-                        {/* <div className="left">
-                        
-                        </div> */}
 
-                        {/* <div className="right">
-                            
-                        </div> */}
+                     {/* <div className="features-mesh">
+
+                            <div className="blob blob-teal"></div>
+                            <div className="blob blob-orange"></div>
+                            <div className="blob blob-yellow"></div>
+
+                            <div className="mesh-grid"></div>
+
+                    </div> */}
+                       
+                    
+                                    
+                               <div className="features-wave-bg" aria-hidden="true">
+        <svg
+            className="features-wave-svg"
+            viewBox="0 0 1440 900"
+            preserveAspectRatio="none"
+        >
+            <path
+                className="wave wave-1"
+                d="
+                    M0 580
+                    C180 80 300 260 480 180
+                    C650 105 760 20 920 125
+                    C1090 240 1220 110 1440 190
+                    L1440 900
+                    L0 900
+                    Z
+                "
+            />
+
+            <path
+                className="wave wave-2"
+                d="
+                    M0 640
+                    C190 250 300 420 490 330
+                    C690 230 780 300 960 355
+                    C1140 410 1270 300 1440 360
+                    L1440 900
+                    L0 900
+                    Z
+                "
+            />
+
+            <path
+                className="wave wave-3"
+                d="
+                    M0 900
+                    C180 410 340 540 510 470
+                    C690 395 830 480 1010 515
+                    C1180 550 1300 450 1440 520
+                    L1440 900
+                    L0 900
+                    Z
+                "
+            />
+        </svg>
+    </div>
                         <div className="features-headline">
 
                             <div className="lp2-eyebrow features"><span></span>Featured Features</div>
