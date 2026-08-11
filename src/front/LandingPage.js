@@ -64,7 +64,6 @@ export default function LandingPage({onGetStarted, onSignin}){
 
                 <section className="features-section">
 
-                 <WaveBG/>
                        
                                     
                    
