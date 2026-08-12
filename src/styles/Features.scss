@@ -134,7 +134,26 @@
   }
 }
 
+.floating-books-wrap {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  pointer-events: none;
+  z-index: 3;
+  overflow: visible;
+  //  background: red;
+}
 
+.floating-book {
+  position: absolute;
+  width: 290px;
+  border-radius: 8px;
+  height: 240px;
+  will-change: transform, opacity;
+  // outline: 3px solid red;
+}
 
 
 

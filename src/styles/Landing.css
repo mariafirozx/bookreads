@@ -18,8 +18,7 @@
   width:100%;
   min-height:100vh;
   height:auto;
-  overflow-x:hidden;
-  overflow-y:visible;
+ overflow: visible;
 }
 
 
@@ -30,7 +29,7 @@
  
   display: grid;
   grid-template-columns: 54% 46%;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .lp2-left {
@@ -45,6 +44,7 @@
   position: relative;
   border-top-right-radius: 30px;
   border-bottom-right-radius:30px;
+  border-bottom-left-radius: 30px;
 
   /* border-radius: 20px; */
   /* background-color: var(--primary-color); */
@@ -237,7 +237,7 @@
   min-height: 0;
 
   z-index: 1;
- 
+  /* border-bottom-right-radius: 30px; */
     /* padding: 2.5rem 3rem 2.5rem 4rem; */
 
 

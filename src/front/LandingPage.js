@@ -12,7 +12,8 @@ import featTrack from "../assets/imgs/track2.png";
 import featRec from "../assets/imgs/smartRec.png";
 import featCom from "../assets/imgs/community.png";
 import HowItWorks from "./HowItWorks.js";
-import WaveBG from "./WaveBG.js";
+import FloatingBooks from "./FloatingBooks.js";
+
 
 export default function LandingPage({onGetStarted, onSignin}){
     const navigate = useNavigate();
@@ -65,7 +66,7 @@ export default function LandingPage({onGetStarted, onSignin}){
                 <section className="features-section">
 
                        
-                                    
+                    <FloatingBooks/>
                    
                         <div className="features-headline">
 
