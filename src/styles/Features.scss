@@ -155,6 +155,30 @@
   // outline: 3px solid red;
 }
 
+.floating-book:hover {
+    cursor: pointer;
+    transform: rotateY(-28deg) rotateZ(-2deg) scale(1.02);
+    -webkit-backface-visibility: hidden;
+    box-shadow: 1px 3px 2px #353d85, 20px 8px 0 #525dc4;
+    /* transform: scale(1.02); */
+}
+
+.floating-book:hover::after {
+    content: " ";
+    display: block;
+    opacity: 1;
+    width: 172px;
+    height: 255px;
+    position: relative;
+    left: 8px;
+    background: linear-gradient(-180deg, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, 0) 60%);
+}
+
+.floating-book:hover::before {
+    transform: translateY(9px);
+    opacity: 1;
+  
+}
 
 
 .features-headline,
