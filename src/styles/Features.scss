@@ -37,32 +37,42 @@
          /* transform: translate3d(-50%, -50%, 0); */
 
 
-        &::before {
-         content: "";
+         &::before {
+   
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
-
-    width: 140px;
-    height: 140px;
-
-    background:
-      url("/imgs/bookPage.jpg")
-      center / cover
-      no-repeat;
-
-    clip-path: polygon(
-      0 0,
-      100% 0,
-      0 100%
-    );
-
-    z-index: 0;
+    width: 355px;  
+    height: 295px;  
+    background: var(--fold-image) center / cover no-repeat;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    z-index: 0;    
     pointer-events: none;
+  }
 
-          rotate: 268deg;
-        }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 185px;
+    height: 185px;
+    background: #dad3b5;
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+    z-index: 1;    
+    pointer-events: none;
+    rotate: 270deg;
+    transition: width 0.4s ease, height 0.4s ease;
+  }
+
+  &:hover::after {
+    width:  190px;
+    height: 190px;
+  }
+
 }
+
 /*
   on li hover make paper fold larger
 */
