@@ -47,7 +47,7 @@ export default function FloatingBooks() {
 
   return (
     <div ref={ref} className="floating-books-wrap">
-      <motion.img 
+      {/* <motion.img 
         src={book1} 
         style={{ y: y1, opacity, top: "25%", left: "5%" }} 
           // style={{ opacity: 1, top: "10%", left: "5%", position: "absolute" }}
@@ -109,7 +109,78 @@ export default function FloatingBooks() {
         src={book11} 
         style={{ y: y11, opacity, top: "100%", left: "75%", rotate:"30deg" }} 
         className="floating-book" 
-      />
+      /> */}
+
+      
+  <motion.img
+    src={book1}
+    style={{ y: y1, opacity, top: "25%", left: "2%", zIndex: 1 }}
+    whileHover={{ scale: 1.03, rotateY: -28, rotateZ: -2 }}
+    className="floating-book"
+  />
+  <motion.img
+    src={book4}
+    style={{ y: y4, opacity, top: "8%", left: "26%", rotate: "5deg", zIndex: 2 }}
+    whileHover={{ scale: 1.03, rotateY: -28, rotateZ: -2 }}
+    className="floating-book"
+  />
+  <motion.img
+    src={book3}
+    style={{ y: y3, opacity, top: "20%", left: "50%", rotate: "-10deg", zIndex: 3 }}
+    whileHover={{ scale: 1.03, rotateY: -28, rotateZ: -2 }}
+    className="floating-book"
+  />
+  <motion.img
+    src={book5}
+    style={{ y: y5, opacity, top: "10%", left: "74%", rotate: "15deg", zIndex: 4 }}
+    whileHover={{ scale: 1.03, rotateY: -28, rotateZ: -2 }}
+    className="floating-book"
+  />
+  <motion.img
+    src={book2}
+    style={{ y: y2, opacity, top: "3%", left: "98%", zIndex: 5 }}
+    whileHover={{ scale: 1.03, rotateY: -28, rotateZ: -2 }}
+    className="floating-book"
+  />
+
+  <motion.img
+    src={book6}
+    style={{ y: y6, opacity, top: "150%", left: "0%", rotate: "-20deg", zIndex: 6 }}
+    whileHover={{ scale: 1.03, rotateY: -28, rotateZ: -2 }}
+    className="floating-book"
+  />
+  <motion.img
+    src={book8}
+    style={{ y: y8, opacity, top: "145%", left: "24%", rotate: "10deg", zIndex: 7 }}
+    whileHover={{ scale: 1.03, rotateY: -28, rotateZ: -2 }}
+    className="floating-book"
+  />
+  <motion.img
+    src={book11}
+    style={{ y: y11, opacity, top: "155%", left: "48%", rotate: "30deg", zIndex: 8 }}
+    whileHover={{ scale: 1.03, rotateY: -28, rotateZ: -2 }}
+    className="floating-book"
+  />
+  <motion.img
+    src={book9}
+    style={{ y: y9, opacity, top: "148%", left: "72%", rotate: "-20deg", zIndex: 9 }}
+    whileHover={{ scale: 1.03, rotateY: -28, rotateZ: -2 }}
+    className="floating-book"
+  />
+
+  <motion.img
+    src={book10}
+    style={{ y: y10, opacity, top: "260%", left: "10%", rotate: "14deg", zIndex: 10 }}
+    whileHover={{ scale: 1.03, rotateY: -28, rotateZ: -2 }}
+    className="floating-book"
+  />
+  <motion.img
+    src={book7}
+    style={{ y: y7, opacity, top: "255%", left: "60%", rotate: "11deg", zIndex: 11 }}
+    whileHover={{ scale: 1.03, rotateY: -28, rotateZ: -2 }}
+    className="floating-book"
+  />
+
 
     </div>
   );

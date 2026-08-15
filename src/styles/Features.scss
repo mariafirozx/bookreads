@@ -41,12 +41,12 @@
    
     content: "";
     position: absolute;
-    top: 0;
+    top: -2rem;
     left: 0;
-    width: 355px;  
-    height: 295px;  
+    width: 250px;  
+    height: 250px;  
     background: var(--fold-image) center / cover no-repeat;
-    clip-path: polygon(0 0, 100% 0, 0 100%);
+    clip-path: polygon(5 5, 100% 0, 0 100%);
     z-index: 0;    
     pointer-events: none;
   }
@@ -56,19 +56,19 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 185px;
-    height: 185px;
+    width: 246px;
+    height: 246px;
     background: #dad3b5;
     clip-path: polygon(0 0, 0 100%, 100% 100%);
     z-index: 1;    
     pointer-events: none;
-    rotate: 270deg;
+    rotate: 260deg;
     transition: width 0.4s ease, height 0.4s ease;
   }
 
   &:hover::after {
-    width:  190px;
-    height: 190px;
+    width:  320px;
+    height: 320px;
   }
 
 }

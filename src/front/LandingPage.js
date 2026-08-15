@@ -13,7 +13,7 @@ import featRec from "../assets/imgs/smartRec.png";
 import featCom from "../assets/imgs/community.png";
 import HowItWorks from "./HowItWorks.js";
 import FloatingBooks from "./FloatingBooks.js";
-import bookPage from "../assets/imgs/bookPage.jpg";
+import bookPage from "../assets/imgs/bookPage2.jpg";
 
 export default function LandingPage({onGetStarted, onSignin}){
     const navigate = useNavigate();
