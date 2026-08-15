@@ -33,8 +33,46 @@
             var(--third-primary-try) 100%
         );
 
+          transition: all ease .5s;
          /* transform: translate3d(-50%, -50%, 0); */
+
+
+        &::before {
+         content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 140px;
+    height: 140px;
+
+    background:
+      url("/imgs/bookPage.jpg")
+      center / cover
+      no-repeat;
+
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      0 100%
+    );
+
+    z-index: 0;
+    pointer-events: none;
+
+          rotate: 268deg;
+        }
 }
+/*
+  on li hover make paper fold larger
+*/
+.features-section:hover:before {
+  border-width: 0 150px 150px 0;
+  border-color: #dcd3b1 var(--bg-color);
+}
+
+
+
 /* .features-halftone {
     position: absolute;
     inset: 0;
