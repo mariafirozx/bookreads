@@ -41,45 +41,46 @@
    
     content: "";
     position: absolute;
-    top: -2rem;
+    top: -2.9rem;
     left: 0;
-    width: 250px;  
-    height: 250px;  
+    width: 240px;  
+    height: 240px;  
     background: var(--fold-image) center / cover no-repeat;
-    clip-path: polygon(5 5, 100% 0, 0 100%);
+    clip-path: polygon(5 5, 120% 5, 5 120%);
     z-index: 0;    
     pointer-events: none;
+    
   }
 
   &::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 246px;
-    height: 246px;
+    top: -2.6rem;
+    left: -0rem;
+    width: 240px;
+    height: 240px;
     background: #dad3b5;
     clip-path: polygon(0 0, 0 100%, 100% 100%);
     z-index: 1;    
     pointer-events: none;
-    rotate: 260deg;
+    rotate: 270deg;
     transition: width 0.4s ease, height 0.4s ease;
   }
 
-  &:hover::after {
-    width:  320px;
-    height: 320px;
-  }
+  // &:hover::after {
+  //   width:  275px;
+  //   height: 275px;
+  // }
 
 }
 
 /*
   on li hover make paper fold larger
 */
-.features-section:hover:before {
-  border-width: 0 150px 150px 0;
-  border-color: #dcd3b1 var(--bg-color);
-}
+// .features-section:hover:before {
+//   border-width: 0 150px 150px 0;
+//   border-color: #dcd3b1 var(--bg-color);
+// }
 
 
 
