@@ -42,14 +42,14 @@
 }
 .hiw-split-b{
   right: 0;
-  background: #b0522e; /* right color — set this var */
+  background: #b0522e; 
 }
 
-/* --- animated wavy seam --- */
+/* --- animated wavy bprder --- */
 .hiw-wave-wrap{
   position: absolute;
   top: 0;
-  left: 50%;                 /* move this to shift split position, e.g. 40% */
+  left: 50%;                 
   transform: translateX(-70px);
   width: 140px;
   height: 100%;
@@ -59,9 +59,9 @@
 
 .hiw-wave-svg{
   display: block;
-  width: 140px;
-  height: 1600px;            /* must be tall enough to cover section height + 1 period */
-  animation: hiw-wave-move 6s linear infinite;
+  width: 149px;
+  height: 1600px;           
+  animation: hiw-wave-move 4s linear infinite;
 }
 
 .hiw-wave-fill-a{ fill: var(--primary-color); }
@@ -72,7 +72,7 @@
   to{ transform: translateY(-200px); } /* exactly one wave period → seamless loop */
 }
 
-/* content sits above the split/wave */
+
 
 .hiw-container{
   /* display: flex;
@@ -96,7 +96,7 @@
 .hiw-headline{
    position: relative;
     /* grid-column: 1 / -1; */
-    width: min(690px, 90%);
+    width: min(695px, 90%);
     margin: 0 ;
     z-index: 5;
     text-align: left;
@@ -113,7 +113,7 @@
 
 .hiw-headline .headline{
   margin: 1rem 0;
-  width: 100%;
+  width: 130%;
   font-size: clamp(50px, 8vw, 65px);
   /* font-size: 83px; */
   color: var(--secondary-primary);
@@ -135,4 +135,17 @@
   font-weight: 550;
   margin-top: 1.5rem;
   text-align: flex-start;
+}
+
+.hiwBook{
+  justify-content: center;
+  align-items: flex-start;
+  margin: 2rem 0;
+  width: 850px;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  filter: contrast(1.05) saturate(1.05);
+  margin-top: -4rem;
+  right: 2rem;
+
 }

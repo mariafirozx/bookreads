@@ -11,7 +11,6 @@ export default function HowItWorks(){
 
           <div className="hiw-split hiw-split-b">
 
-            <img src={poster}></img>
           </div>
 
           {/* animated wavy seam between them */}
@@ -46,8 +45,10 @@ export default function HowItWorks(){
                             <h1 className="headline hiw"> <span>Shelf, Track, & Review</span> your current reads with bookreads community.</h1>
                             <p className="sub-hiw">create your own shelfs and organize your books right here without forgetting about them.</p>
 
-                        </div>
+        </div>
               <div className="hiw-cards">
+                <img className="hiwBook" srcset={`${poster} 1x`}
+                src={poster}></img>
                 <div className="hiw-card">
 
                 </div>
