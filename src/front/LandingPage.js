@@ -63,7 +63,7 @@ export default function LandingPage({onGetStarted, onSignin}){
 
                 </section>
 
-                <section className="features-section" style={{ "--fold-image": `url(${bookPage})` }}>
+                <section className="features-section" /**style={{ "--fold-image": `url(${bookPage})` }**/>
 
                        
                     <FloatingBooks/>

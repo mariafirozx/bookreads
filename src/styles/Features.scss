@@ -37,35 +37,35 @@
          /* transform: translate3d(-50%, -50%, 0); */
 
 
-         &::before {
+  //        &::before {
    
-    content: "";
-    position: absolute;
-    top: -2.9rem;
-    left: 0;
-    width: 240px;  
-    height: 240px;  
-    background: var(--fold-image) center / cover no-repeat;
-    clip-path: polygon(5 5, 120% 5, 5 120%);
-    z-index: 0;    
-    pointer-events: none;
+  //   content: "";
+  //   position: absolute;
+  //   top: -2.9rem;
+  //   left: 0;
+  //   width: 240px;  
+  //   height: 240px;  
+  //   background: var(--fold-image) center / cover no-repeat;
+  //   clip-path: polygon(5 5, 120% 5, 5 120%);
+  //   z-index: 0;    
+  //   pointer-events: none;
     
-  }
+  // }
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: -2.6rem;
-    left: -0rem;
-    width: 240px;
-    height: 240px;
-    background: #dad3b5;
-    clip-path: polygon(0 0, 0 100%, 100% 100%);
-    z-index: 1;    
-    pointer-events: none;
-    rotate: 270deg;
-    transition: width 0.4s ease, height 0.4s ease;
-  }
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: -2.6rem;
+  //   left: -0rem;
+  //   width: 240px;
+  //   height: 240px;
+  //   background: #dad3b5;
+  //   clip-path: polygon(0 0, 0 100%, 100% 100%);
+  //   z-index: 1;    
+  //   pointer-events: none;
+  //   rotate: 270deg;
+  //   transition: width 0.4s ease, height 0.4s ease;
+  // }
 
   // &:hover::after {
   //   width:  275px;
