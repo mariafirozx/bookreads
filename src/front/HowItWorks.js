@@ -2,6 +2,7 @@ import react from "react";
 import { useEffect, useState } from "react";
 import poster from "../assets/imgs/hiw-poster.png";
 import { p } from "framer-motion/client";
+import PageFlip from "./PageFlip";
 
 export default function HowItWorks(){
     return(
@@ -49,7 +50,8 @@ export default function HowItWorks(){
               <div className="hiw-cards">
                 <img className="hiwBook" srcset={`${poster} 1x`}
                 src={poster}></img>
-                <div className="hiw-card">
+                <div className="hiw-flipbook">
+                  <PageFlip/>
 
                 </div>
             </div>
