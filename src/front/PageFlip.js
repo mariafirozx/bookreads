@@ -5,32 +5,42 @@ import HTMLFlipBook from "react-pageflip";
 export default function PageFlip(){
     return(
         <>
+            <div className="flip-wrap">
 
-        <HTMLFlipBook
-                            width={420}
-                            height={300}
+                 <HTMLFlipBook
+                           width={350}
+                            height={379}
                             size="fixed"
-                            showCover={true}
+
+                            showCover={false}
+                            usePortrait={false}
+
                             showPageCorners={true}
                             useMouseEvents={true}
+
                             drawShadow={true}
-                            flippingTime={900}
-                            maxShadowOpacity={0.4}
+                            maxShadowOpacity={0.6}
+                            flippingTime={700}
+
+                            mobileScrollSupport={true}
                         >
 
                             <div className="hiw-page hiw-cover">
                                 <span>BOOKREADS</span>
 
-                                <h2>
-                                    How it
-                                    <br />
-                                    works.
+                                <h2 className="titleCover">
+                                    “The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.”
+                                    <br/>
+                                    <h4>
+
+                                    ― Jane Austen, Northanger Abbey
+                                    </h4>
                                 </h2>
                             </div>
 
                             <div className="hiw-page">
                                 <span className="page-number">
-                                    01
+                                    Chapter One
                                 </span>
 
                                 <h2>
@@ -48,7 +58,7 @@ export default function PageFlip(){
 
                             <div className="hiw-page">
                                 <span className="page-number">
-                                    02
+                                    Chapter Two
                                 </span>
 
                                 <h2>
@@ -66,7 +76,7 @@ export default function PageFlip(){
 
                             <div className="hiw-page">
                                 <span className="page-number">
-                                    03
+                                    Chapter Three
                                 </span>
 
                                 <h2>
@@ -90,7 +100,8 @@ export default function PageFlip(){
                                 </h2>
                             </div>
 
-                        </HTMLFlipBook>
+                </HTMLFlipBook>
+            </div>
         </>
     )
 }

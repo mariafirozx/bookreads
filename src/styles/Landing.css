@@ -254,6 +254,7 @@
   object-fit: cover;
   object-position: 80% 40%;  
   display: block;
+  border-bottom-right-radius: 60px;
   
   
 }
