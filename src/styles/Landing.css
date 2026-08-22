@@ -19,6 +19,8 @@
   min-height:100vh;
   height:auto;
  overflow: visible;
+
+
 }
 
 
@@ -30,6 +32,14 @@
   display: grid;
   grid-template-columns: 54% 46%;
   overflow: visible;
+  background:
+        linear-gradient(
+            to right,
+            var(--bg-color) 0%,
+            var(--bg-color) 50%,
+            var(--third-primary-try) 50%,
+            var(--third-primary-try) 100%
+        );
 }
 
 .lp2-left {
@@ -44,7 +54,7 @@
   position: relative;
   border-top-right-radius: 30px;
   border-bottom-right-radius:30px;
-  border-bottom-left-radius: 60px;
+  border-bottom-left-radius: 80px;
 
   /* border-radius: 20px; */
   /* background-color: var(--primary-color); */
@@ -254,7 +264,7 @@
   object-fit: cover;
   object-position: 80% 40%;  
   display: block;
-  border-bottom-right-radius: 60px;
+  border-bottom-right-radius: 80px;
   
   
 }
