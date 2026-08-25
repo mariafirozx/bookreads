@@ -1,8 +1,9 @@
 import react from "react";
 import { useEffect, useState } from "react";
-import poster from "../assets/imgs/hiw-poster.png";
+import poster from "../assets/imgs/poster5.png";
 import { p } from "framer-motion/client";
 import PageFlip from "./PageFlip";
+import hand from "../assets/imgs/hand.png";
 
 export default function HowItWorks(){
     return(
@@ -54,6 +55,8 @@ export default function HowItWorks(){
                   <PageFlip/>
 
                 </div>
+
+                {/* <img className="holding-book-hand" src={hand}></img> */}
             </div>
         </div> 
       

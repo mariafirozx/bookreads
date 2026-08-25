@@ -81,7 +81,7 @@
   width: 100%;
   background-color: var(--primary-color); */
 
-   width:100%;
+    width:100%;
     min-height:100%;
     display:flex;
     align-items:center;
@@ -141,18 +141,25 @@
   justify-content: center;
   align-items: flex-start;
   margin: 2rem 0;
-  width: 850px;
+  width: 690px;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
   filter: contrast(1.05) saturate(1.05);
-  margin-top: -4rem;
-  right: 2rem;
+  margin-top: -15rem;
+  right: 6rem;
   position: absolute;
+
+  /* width: 50%;
+  height: 100%;
+  margin: 0 0;
+  object-fit: cover;
+  object-position: 50% 100%;  
+  display: block;
+ left: 5rem; */
 /* 
     width: 100%; */
-    height: 100%;
 
-    object-fit: contain;
+    /* object-fit: contain; */
 
     z-index: 1;
 
@@ -180,9 +187,23 @@
   top: 6px;
   bottom: 6px;
   width: 100%;
-  background: var(--secondary--card); /* page-edge color, slightly darker than page bg */
+  background: var(--secondary--card);
+  /* page-edge color, slightly darker than page bg */
   border-radius: 4px;
   z-index: -1;
+
+     /* transform: translateX(-50%);
+
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.12),
+        rgba(0,0,0,0.30),
+        rgba(0,0,0,0.12)
+    );
+
+    pointer-events: none;
+
+    z-index: 50; */
 }
 
 .flip-wrap::before{
@@ -199,11 +220,15 @@
 .hiw-flipbook {
    
     position: absolute;
-    top: 58%;
-    left: 55%;
-    z-index: 5;
+   left: 55%;
+    top: 55%;
+    z-index: 1;
     transform: translate(-50%, -50%) rotate(0deg);
+    perspective: 1800px;
+}
 
+.hiw-flipbook .stf__block{
+  transform-style: preserve-3d;
 }
 
 .hiw-page {
@@ -215,15 +240,33 @@
     background: var(--bg-color);
     color: var(--third-primary);
     display: flex;
+    gap: 2rem;
     flex-direction: column;
     border-radius: 5px;
     justify-content: center;
-      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04);
-      background: url("/imgs/paper-texture.jpg");
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04),
+        0 8px 15px rgba(0,0,0,0.12);
+      background-image: url("/src/assets/imgs/paper-texture.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
 
 
     font-family: "Onest", sans-serif;
 }
+
+/* .hiw-page::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    width: 35px;
+
+    pointer-events: none;
+
+    z-index: 5;
+} */
 
 .hiw-page::after{
   content: "";
@@ -251,30 +294,51 @@
   pointer-events: none;
 }
 
+/* .hiw-page:nth-child(even)::before {
+    right: 0;
 
+    background: linear-gradient(
+        to left,
+        rgba(0,0,0,0.22),
+        rgba(0,0,0,0.08),
+        transparent
+    );
+}
+
+.hiw-page:nth-child(odd)::before {
+    left: 0;
+
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.22),
+        rgba(0,0,0,0.08),
+        transparent
+    );
+} */
 .hiw-page h2 {
     font-family: "Goudy Bookletter 1911", serif;
-    font-size: 2.6rem;
+    font-size: 1.9rem;
     line-height: .9;
-    margin: 0 0 1.5rem;
+    margin: 2rem 0 1.4rem;
+    font-weight: 596;
 }
 
 .hiw-page .titleCover{
-  font-size: 15px;
+  font-size: 12.7px;
   line-height: 1.2;
-  margin-top: 4rem;
+  margin-top: 3rem;
   font-style: italic;
-  color: var(--bg-color);
+  color: var(--third-primary);
   font-weight: 550;
 }
 .hiw-page .titleCover h4{
-  font-size: 15px;
+  font-size: 10px;
   margin-top: 1.5rem;
-  margin-left: 2.5rem;
+  margin-left: 1.8rem;
 }
 
 .hiw-page p {
-    font-size: 15px;
+    font-size: 12px;
 
     line-height: 1.5;
 
@@ -282,21 +346,26 @@
 }
 
 .page-number {
-    font-size: 12px;
+    font-size: 13px;
+    font-family: "Goudy Bookletter 1911", serif;
 
-    font-weight: 800;
+    font-weight: 950;
 
     letter-spacing: .15em;
 
-    margin-bottom: 2rem;
-
-    color: var(--primary-color);
+    align-items: center;
+    text-align: center;
+    color: var(--third-primary);
 }
 
 .hiw-cover {
     background: var(--third-primary-try);
 
     color: var(--secondary-primary);
+
+     background-image: url("/src/assets/imgs/cover-texture.png");
+      background-repeat: no-repeat;
+      background-size: cover;
 
     justify-content: space-between;
     border-radius: 6px 4px 4px 6px;
@@ -332,12 +401,14 @@
     line-height: .8;
 }
 .hiw-back {
-    background: var(--secondary-primary);
+    /* background: var(--secondary-primary); */
 
-    color: var(--bg-color);
-
+    background-image: url("/src//assets/imgs/cover-texture.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
 
+    background-color: var(--third-primary-try);
     align-items: center;
     border-radius: 4px 6px 6px 4px;
   box-shadow: inset 2px 0 6px rgba(0,0,0,0.2);
@@ -347,3 +418,20 @@
     font-size: 3.5rem;
 }
 
+.holding-book-hand{
+   position: absolute;
+    width: 280px;
+    height: auto;
+
+    left: 55%;
+    top: 98%;
+
+    z-index: 20;
+
+    transform:
+        translate(-50%, -50%)
+        rotate(28deg);
+
+    pointer-events: none;
+
+}
