@@ -29,6 +29,25 @@
 
 }
 
+.hiw-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  width: 50%;
+
+  background-image: url("../assets/imgs/paper-fibers.png");
+  background-repeat: repeat;
+  background-size: 458px;
+
+  opacity: 0.25;
+  pointer-events: none;
+
+  z-index: 2;
+}
+
 .hiw-split{
   position: absolute;
   top: 0;
@@ -38,12 +57,31 @@
 }
 .hiw-split-a{
   left: 0;
+
   background: var(--primary-color);   /* left color */
 }
+ 
 .hiw-split-b{
-  right: 0;
-  background: #b0522e; 
+   right: 0;
+  background: #b0522e;
+  /* position: absolute; */
+  z-index: 1;
+ 
 }
+/* .hiw-split-b::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: url("../assets/imgs/light-paper-fibers.png")
+              repeat;
+  background-size: 458px;
+
+  opacity: 0.25;
+  pointer-events: none;
+
+  z-index: 0;
+} */
 
 /* --- animated wavy bprder --- */
 .hiw-wave-wrap{
@@ -54,7 +92,7 @@
   width: 140px;
   height: 100%;
   overflow: hidden;
-  z-index: 2;
+  z-index: 1;
 }
 
 .hiw-wave-svg{

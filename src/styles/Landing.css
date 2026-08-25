@@ -42,6 +42,8 @@
         );
 }
 
+
+
 .lp2-left {
   background: var(--third-primary-try);
   display: flex;
@@ -55,6 +57,7 @@
   border-top-right-radius: 30px;
   border-bottom-right-radius:30px;
   border-bottom-left-radius: 80px;
+  
 
   /* border-radius: 20px; */
   /* background-color: var(--primary-color); */
@@ -79,6 +82,8 @@
 
     border-radius:0 40px 40px 0 / 0 20% 20% 0;
     clip-path: ellipse(88% 110% at left center);
+
+   
 
 }
 /* .lp2-left::after {
