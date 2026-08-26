@@ -9,8 +9,63 @@
     overflow:hidden;
     isolation: isolate;
     z-index: 2;
+    background-image: url("../assets/imgs/paper-effect.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .about-us{
+  margin: 10rem 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+  display: flex;
+  position: relative;
 
+}
+
+.coverT{
+  justify-content: flex-start;
+  display: block;
+  align-items: flex-start;
+  margin: 4rem 4rem;
+    color: var(--third-primary);
+
+
+}
+
+.aboutT{
+  justify-content: center;
+  align-items: center;
+  font-family: "Goudy Bookletter 1911", serif;
+  font-weight: 700;
+  font-size: 150px;
+}
+
+.aboutT span{
+  display: block;
+  margin: 0;
+  font-weight: 700;
+  font-size: 150px;
+  margin-top: -3rem;
+}
+
+.aboutDes{
+  width: 80px;
+  font-family: "Onest", sans-serif;
+  font-weight: 500;
+
+
+}
+
+.borderAbout{
+  justify-content: center;
+  align-items: center;
+  margin: 7.5rem 2rem;
+  display: block;
+  padding: 18rem;
+  /* background-color: var(--third-primary); */
+  width: 100%;
+  height: 100%;
+  margin-left: -8rem;
+  border: 2px solid var(--third-primary);
 }
