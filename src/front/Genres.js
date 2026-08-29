@@ -1,16 +1,40 @@
 import React from "react";
 import aboutIMG from "../assets/imgs/about-book.png";
 
-export default function About(){
+export default function Genres(){
     return(
         <>
         <div className="about-us">
             <div className="coverT">
 
-            <h2 className="aboutT">about <span>us</span></h2>
-            <p className="aboutDes">our journey. our values. they shape your next read. and your next <span>favorite </span></p>
+            <h2 className="aboutT">Our Genre</h2>
             </div>
-            <div className="borderAbout">
+
+            <div className="genreList">
+
+                    <div className="genre">
+                        <span>Young adult</span>
+
+                    </div>
+                <h3 className="genre">Fantasy</h3>
+                <h3 className="genre">Fiction</h3>
+                <h3 className="genre">Romance</h3>
+                <h3 className="genre">Science Fiction</h3>
+                <h3 className="genre">Historical Fiction</h3>
+                <h3 className="genre">Horror</h3>
+                <h3 className="genre">Thriller</h3>
+                <h3 className="genre">Magical Realism</h3>
+
+
+
+            </div>
+            <p className="aboutDes">find your next favorite read from the many selection of genre! </p>
+
+
+
+
+
+            {/* <div className="borderAbout">
 
             <img className="aboutImg" src={aboutIMG}></img>
                 <div className="about-cards">
@@ -41,9 +65,8 @@ export default function About(){
 
 
                 </div>
-            </div>
+            </div> */}
             
-            {/* <img className="aboutUs-poster" src={aboutIMG}></img> */}
         </div>
         </>
     )

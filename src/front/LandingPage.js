@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import "../styles/Landing.css";
 import "../styles/Features.scss";
 import "../styles/HowItWorks.css";
-import "../styles/About.css";
+import "../styles/Genres.css";
 import landingPic from "../assets/imgs/landingPic3.jpg";
 import featureIMG from "../assets/imgs/features-sec-3.jpg";
 import pageGif from "../assets/imgs/page.gif";
@@ -14,7 +14,7 @@ import featRec from "../assets/imgs/smartRec.png";
 import featCom from "../assets/imgs/community.png";
 import HowItWorks from "./HowItWorks.js";
 import FloatingBooks from "./FloatingBooks.js";
-import About from "./About.js";
+import Genres from "./Genres.js";
 import bookPage from "../assets/imgs/corner2.jpg";
 
 export default function LandingPage({onGetStarted, onSignin}){
@@ -140,7 +140,7 @@ export default function LandingPage({onGetStarted, onSignin}){
                 </section>
 
                 <section className="aboutUs-section">
-                     <About/>                           
+                     <Genres/>                           
                 </section>
             </div>
         
