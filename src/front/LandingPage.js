@@ -36,7 +36,7 @@ export default function LandingPage({onGetStarted, onSignin}){
                             <div className="lp2-nav-links">
                                 <a className="lp2-nav-link">Features</a>
                                 <a className="lp2-nav-link">How It Works</a>
-                                <a className="lp2-nav-link">About</a>
+                                <a className="lp2-nav-link">All Books</a>
                             </div>
                             <button className="lp2-signin" onClick={handleSignIn}>Sign in</button>
                         </nav>

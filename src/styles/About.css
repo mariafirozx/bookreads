@@ -1,6 +1,6 @@
 .aboutUs-section{
      min-height:120vh;
-  background: #fd47f1;
+  background: #f138e5;
   margin: 1rem 0;
   padding: 0;
   position: relative;
@@ -9,11 +9,30 @@
     overflow:hidden;
     isolation: isolate;
     z-index: 2;
-    background-image: url("../assets/imgs/paper-effect.png");
+    /* background-image: url("../assets/imgs/paper-text.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
 
+.aboutUs-section::after{
+   content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  width: 100%;
+
+  background-image: url("../assets/imgs/paper-effect.png");
+  background-repeat: repeat;
+  background-size: cover;
+
+  opacity: 0.30;
+  pointer-events: none;
+  
+
+  z-index: 2;
+}
 .about-us{
   margin: 10rem 0;
   align-items: flex-start;
@@ -36,36 +55,211 @@
 .aboutT{
   justify-content: center;
   align-items: center;
-  font-family: "Goudy Bookletter 1911", serif;
-  font-weight: 700;
-  font-size: 150px;
+  font-family: "Onest", serif;
+  font-weight: 850;
+  font-size: 190px;
 }
 
 .aboutT span{
   display: block;
   margin: 0;
-  font-weight: 700;
+  font-weight: 850;
   font-size: 150px;
-  margin-top: -3rem;
+  margin-top: -4.5rem;
 }
 
 .aboutDes{
-  width: 80px;
+  width: 100px;
   font-family: "Onest", sans-serif;
   font-weight: 500;
+  font-size: 20px;
 
 
 }
 
-.borderAbout{
+/* .borderAbout{
   justify-content: center;
   align-items: center;
-  margin: 7.5rem 2rem;
+  margin: 6.5rem 2rem;
   display: block;
-  padding: 18rem;
-  /* background-color: var(--third-primary); */
+  padding: 5rem;
   width: 100%;
   height: 100%;
-  margin-left: -8rem;
+  margin-left: -20rem;
   border: 2px solid var(--third-primary);
 }
+
+.aboutImg{
+  justify-content: center;
+  align-items: center;
+  display: block;
+  margin: 3rem 10rem;
+  width: 500px;
+} */
+
+.borderAbout{
+ position: relative;
+
+  width: 100%;
+  height: 700px;
+
+  margin: 6.5rem 2rem;
+  margin-left: -20rem;
+
+  border: 2px solid var(--third-primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  overflow: visible;
+}
+
+.aboutImg {
+  position: absolute;
+
+  width: 600px; 
+  height: auto;
+
+  margin: 0;
+
+  right: -4rem;
+  z-index: 3;
+  top: 2rem;
+}
+
+.about-cards {
+    position: absolute;
+    left: 4rem;
+    bottom: 4rem;
+
+    display: flex;
+    gap: 2rem;
+
+    z-index: 5;
+}
+
+
+.about-card {
+    position: relative;
+
+    width: 260px;
+    min-height: 300px;
+
+    padding: 2rem;
+
+    box-sizing: border-box;
+
+    background: #f4ead0;
+    color: var(--third-primary);
+
+    font-family: "Onest", sans-serif;
+
+    /* torn paper shape */
+    clip-path: polygon(
+        2% 4%,
+        8% 2%,
+        14% 4%,
+        21% 1%,
+        28% 3%,
+        36% 1%,
+        43% 4%,
+        51% 2%,
+        59% 4%,
+        67% 1%,
+        75% 3%,
+        83% 1%,
+        92% 4%,
+        98% 2%,
+
+        97% 10%,
+        99% 18%,
+        96% 26%,
+        98% 35%,
+        96% 44%,
+        99% 53%,
+        96% 62%,
+        98% 71%,
+        96% 80%,
+        99% 90%,
+        96% 97%,
+
+        89% 96%,
+        82% 99%,
+        74% 97%,
+        66% 99%,
+        58% 97%,
+        50% 99%,
+        42% 97%,
+        34% 99%,
+        26% 97%,
+        18% 99%,
+        10% 96%,
+        3% 98%,
+
+        4% 90%,
+        1% 82%,
+        4% 74%,
+        2% 65%,
+        4% 56%,
+        1% 47%,
+        4% 38%,
+        2% 29%,
+        4% 20%,
+        1% 11%
+    );
+
+    box-shadow:
+        8px 12px 20px rgba(0, 0, 0, 0.18);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.card-one {
+    transform: rotate(-4deg);
+}
+
+.card-two {
+    transform: rotate(3deg) translateY(-20px);
+}
+
+.card-three {
+    transform: rotate(-2deg) translateY(10px);
+}
+
+.card-one:hover {
+    transform: rotate(-4deg) translateY(-15px) scale(1.03);
+}
+
+.card-two:hover {
+    transform: rotate(3deg) translateY(-35px) scale(1.03);
+}
+
+.card-three:hover {
+    transform: rotate(-2deg) translateY(-5px) scale(1.03);
+}
+
+.about-card span {
+    font-family: "Goudy Bookletter 1911", serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.about-card h3 {
+    font-family: "Goudy Bookletter 1911", serif;
+    font-size: 2.3rem;
+    line-height: 0.9;
+    margin: 2rem 0 1rem;
+}
+
+.about-card p {
+    font-size: 15px;
+    line-height: 1.5;
+    max-width: 200px;
+}
+
+/*d="M1036.04 224.719c46.68-18.686 94.68-27.593 145.01-17.193 69.48 14.366 110.3 57.983 128.04 125.006 15.96 60.318 6.45 120.498-1.31 180.811-8.29 64.443-17.14 128.943-21.73 193.698-3.4 47.933 9.35 93.628 35.22 135.082 24.6 39.428 58.71 63.776 105.27 70.7 51.26 7.619 100.97-1.424 150.87-11.351 44.59-8.86 89.22-18.234 134.27-23.788 37.99-4.686 76.51-2.359 112.24 14.388 64.95 30.445 87.52 98.718 76.62 164.068-9.87 59.15-42.57 105.15-84.56 145.85-44.84 43.48-98.21 75.46-148.83 111.16-30.84 21.75-60.77 44.41-86.53 71.35H1247.7c35.22-37.78 74.41-71.86 110.25-109.11 18.75-19.49 36.56-40.97 49.88-64.35 26.16-45.95 9.65-92.6-37.47-116.63-29.31-14.95-60.63-23-92.65-29.34-47.63-9.41-95.64-17.46-142.48-29.89-26.81-7.12-53.14-19.24-76.97-33.6-37.72-22.74-50.73-59.621-48.21-102.647 2.46-42.061 19.25-79.708 35.43-117.636 9.87-23.115 19.1-46.499 28.22-69.907 2.34-5.995 3.57-12.517 4.6-18.912 6.58-40.968-12.55-65.234-54.23-62.184-35.208 2.579-69.935 11.611-104.902 17.609-43.082 7.393-85.968 16.846-129.373 21.383-72.784 7.609-140.416-13.554-203.621-47.289-57.69-30.79-113.048-65.891-169.936-98.199-40.136-22.803-82.672-40.545-128.108-49.343-43.977-8.506-87.368-6.74-127.138 17.541-26.209 16.007-41.953 39.592-48.511 69.378-12.397 56.359 4.802 106.985 30.146 156.167 28.004 54.347 66.44 101.409 103.329 149.563 37.221 48.583 74.231 97.305 98.581 154.026 15.151 35.28 25.634 71.86 24.527 110.8-1.931 68.15-36.554 114.5-96.26 144.23-45.75 22.78-95.324 30.65-144.973 39.2-58.87 10.13-118.149 19.35-175.929 34.11-76.784 19.6-104.832 50.54-156.366 104.26l-188.143-192.09c6.548-.9 13.143-1.65 19.782-2.23 64.263-5.7 128.992-6.19 193.515-9.07 59.582-2.68 118.457-8.23 172.797-36.44 68.743-35.69 95.923-102.94 71.734-176.51C47.238 982.71 14 937.57-20.86 893.052c-40.325-51.507-81.776-102.294-119.092-155.941-47.12-67.745-66.267-144.502-59.071-226.985 5.782-66.292 34.986-122.322 81.434-168.708 86.136-86.027 189.43-120.689 309.992-96.782 61.552 12.208 114.972 42.82 165.548 78.705 47.349 33.599 93.841 68.447 141.911 100.971 70.388 47.621 143.971 47.529 215.775 4.92 48.318-28.674 94.065-61.87 139.754-94.725 57.434-41.309 114.359-83.274 180.648-109.788Z"*/
