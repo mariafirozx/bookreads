@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+
 .aboutUs-section{
      min-height:120vh;
-  background: #fd47f1;
+  /* background: #fd47f1; */
+  background: var(--secondary-primary);
   margin: 1rem 0;
   padding: 0;
   position: relative;
@@ -42,7 +46,7 @@
   justify-content: flex-start;
   display: flex;
   position: relative;
-  min-height: 170vh;
+  min-height: 155vh;
 
 }
 
@@ -55,9 +59,8 @@
   transform: translateX(-50%);
   top: 3rem;
   left: 50%;
-text-align: center;
-    color: var(--third-primary);
-
+    text-align: center;
+    color: var(--primary-color);
 
 }
 
@@ -84,11 +87,11 @@ text-align: center;
   rotate: -18deg;
   left: 8rem;
   top: 6rem;
-  font-family: "Goudy Bookletter 1911", serif;
+  font-family: "Onest", sans-serif;
   font-weight: 850;
-  font-size: 19px;
+  font-size: 16px;
   text-align: center;
-  color: var(--primary-color);
+  color: var(--third-primary);
   margin: 0;
 }
 
@@ -278,31 +281,150 @@ text-align: center;
 }
 
 .genreList{
-   position: absolute;
+  position: absolute;
   display: block;
   margin: 0;
   padding: 0;
 
   transform: translateX(-50%);
-  top: 4rem;
+  top: 5.9rem;
   left: 50%;
-text-align: center;
-    color: var(--third-primary);
+  text-align: center;
+  color: var(--primary-color);
 }
+
 .genre{
-  font-size: 103px;
+  font-size: 113px;
   font-family:  "Goudy Bookletter 1911", serif;
   font-weight: 900;
   line-height: 100px;
   cursor:default;
+  padding: 0 1rem;
+  white-space: nowrap;
+}
+
+.genre-row {
+  display: grid;
+  grid-template-columns: 220px 1fr 220px;
+  align-items: center;
+  width: 100%;
+}
+
+.genre {
+  grid-column: 2;
+  justify-self: center;
+}
+
+.book-container-genre {
+  display: flex;
+  gap: 1.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.book-container-genre-left {
+  grid-column: 1;
+  justify-self: end;
+  transform: translateX(24px);
+}
+
+.book-container-genre-right {
+  grid-column: 3;
+  justify-self: start;
+  transform: translateX(-24px);
+}
+
+.book-container-genre.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+.book-outline img {
+  width: 90px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+}
+
+.genre.is-hovered {
+    animation: blurSwapIn 0.27s ease-out forwards;
+}
+
+.genre.is-leaving {
+    animation: blurSwapOut 0.27s ease-out forwards;
+}
 
 
+@keyframes blurSwapIn{
+
+    0% {
+        filter: blur(0px);
+        font-family: "Goudy Bookletter 1911", serif;
+        font-weight: 900;
+    }
+
+    40% {
+        filter: blur(1px);
+    }
+
+    50% {
+        filter: blur(1px);
+        font-family: "Caveat", cursive;
+        font-weight: 700;
+    }
+
+    100% {
+        filter: blur(0px);
+        font-family: "Caveat", cursive;
+        font-weight: 700;
+    }
 }
-.genre span{
-  display: block;
-  transition:
-        transform .5s cubic-bezier(.77,0,.18,1);
+
+@keyframes blurSwapOut {
+
+    0% {
+        filter: blur(0px);
+        font-family: "Caveat", cursive;
+        font-weight: 700;
+    }
+
+    45% {
+        filter: blur(1px);
+    }
+
+    50% {
+        filter: blur(1px);
+        font-family: "Goudy Bookletter 1911", serif;
+        font-weight: 900;
+    }
+
+    100% {
+        filter: blur(0px);
+        font-family: "Goudy Bookletter 1911", serif;
+        font-weight: 900;
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* .genre span:nth-child(2) {
     position: absolute;
 
@@ -326,14 +448,14 @@ text-align: center;
     transform: translateY(-100%);
 } */
 
-.genre span:hover{
+/* .genre span:hover{
   letter-spacing: -.01em;
     margin-top: 3%;
     font-family: "Onest", sans-serif;
     
     line-height: .8;
     position: absolute;
-}
+} */
 
 
 
